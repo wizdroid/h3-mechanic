@@ -1,0 +1,19 @@
+# Specifications and planning docs (kept local)
+documents/
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated output
+meta-prompts/_generated.md
+
+# Secrets, local project files, editor and OS junk
+secrets.json
+.env
+*.h3m.json
+.venv/
+.DS_Store
+*.swp
+*.log
+*.tmp

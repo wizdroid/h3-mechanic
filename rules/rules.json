@@ -1,0 +1,3405 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-25T15:38:04+00:00",
+  "source": "cheatsheets/minimax-h3-cheatsheet-categorized.xlsx",
+  "structure": "sheets.<name> is an ordered list of rows {category, keyword, snippet, example, source}",
+  "sources": {
+    "1": "11-style-80s-bollywood.md",
+    "2": "03-camera-motions.md",
+    "3": "08-t2va.md",
+    "4": "09-i2va-fl2va-l2va.md",
+    "5": "13-style-modern-series.md",
+    "6": "10-ref2va.md",
+    "7": "14-style-noir-thriller.md",
+    "8": "12-style-cinematic-modern.md",
+    "9": "16-preflight-checklist.md",
+    "10": "15-troubleshooting.md",
+    "11": "05-voice-library.md",
+    "12": "06-expressions-and-delivery.md",
+    "13": "02-shared-grammar.md",
+    "14": "04-framing-and-timing.md",
+    "15": "07-languages-and-on-screen-text.md"
+  },
+  "sheets": {
+    "Table 1": [
+      {
+        "category": "Camera Motions",
+        "keyword": "Crash Zoom / Slow Zoom",
+        "snippet": "The camera zooms in with large amplitude at fast speed onto  (crash zoom) for shock and dialogue punches, or uses slow zooms in for romance, static frontal compositions, or low angles on the hero.",
+        "example": "On the last word, the camera zooms in with large amplitude at fast speed onto a close-up of his face. / The camera zooms in with small amplitude at slow speed.",
+        "source": [
+          "11-style-80s-bollywood.md",
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Push-in / Pull-out",
+        "snippet": "The camera pushes in with amplitude at speed toward target, or pulls out at speed.",
+        "example": "The camera pushes in with small amplitude at slow speed toward her face. / The camera pulls out at slow speed, revealing the empty corridor behind her.",
+        "source": [
+          "03-camera-motions.md",
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md",
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Slow emotional push-in",
+        "snippet": "The camera pushes in with small amplitude at slow speed toward her face as her eyes fill with tears",
+        "example": "The camera pushes in with small amplitude at slow speed toward her face as her eyes fill with tears",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Dolly zoom (vertigo)",
+        "snippet": "The camera pushes in at slow speed while zooming out, stretching the corridor behind her",
+        "example": "The camera pushes in at slow speed while zooming out, stretching the corridor behind her",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Tracking",
+        "snippet": "The camera tracks  from direction at speed speed, keeping a steady distance. Modes include tracking from front (leading), behind (following), side (parallel), or smoothly via Steadicam.",
+        "example": "The camera tracks <Subject 1> and <Subject 2> from behind at slow speed, keeping a steady distance... / The camera tracks her from the front, moving backward ahead of her at the same pace and keeping a steady distance so her face stays clear and undistorted.",
+        "source": [
+          "10-ref2va.md",
+          "03-camera-motions.md",
+          "08-t2va.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Truck left / right / Truck alongside",
+        "snippet": "The camera trucks left / right at speed alongside",
+        "example": "The camera trucks right at slow speed alongside <Subject 1> as he walks past the cell bars",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Pan left / right / Pan reveal / Whip pan",
+        "snippet": "The camera pans left / right with amplitude at speed, revealing target",
+        "example": "The camera pans right with large amplitude at fast speed, revealing the open doorway. / The camera pans left, revealing the officer standing in the doorway.",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Tilt up / down / Tilt reveal",
+        "snippet": "The camera tilts up / down from source to target",
+        "example": "The camera tilts up from his polished boots to his stern face",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Pedestal / Crane up / down",
+        "snippet": "The camera pedestals up / down with amplitude at speed",
+        "example": "The camera pedestals down at slow speed, settling at eye level with <Subject 1> / The camera pedestals up with large amplitude at slow speed, rising above the prison yard",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Boom + tilt (crane reveal)",
+        "snippet": "The camera pedestals up at slow speed while tilting down onto the courtyard",
+        "example": "The camera pedestals up at slow speed while tilting down onto the courtyard",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Arc (orbit) / 360",
+        "snippet": "The camera arcs around  with amplitude at speed",
+        "example": "The camera arcs around <Subject 1> and <Subject 2> with large amplitude at slow speed",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Roll / Dutch angle",
+        "snippet": "A tilted Dutch-angle medium shot… for a fixed tilt, or The camera rolls clockwise / counterclockwise with amplitude for a moving tilt.",
+        "example": "A tilted Dutch-angle medium shot… / The camera rolls clockwise with small amplitude",
+        "source": [
+          "03-camera-motions.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Static / Static Shot / Locked-off establishing",
+        "snippet": "The camera holds a static shot",
+        "example": "The camera holds a static shot on the prison gate at dawn / as the runner exits the frame.",
+        "source": [
+          "03-camera-motions.md",
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Camera Movement",
+        "snippet": "slow push-ins, smooth tracking, static holds on performance, occasional slow arc. Speed at slow speed by default",
+        "example": "The camera pushes in with small amplitude at slow speed toward him, holding him centered.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Camera",
+        "snippet": "coverage: MCU singles, over-the-shoulder, MS two-shots; the camera shakes slightly for handheld intimacy; static for confrontations; slow push-in for the key line",
+        "example": "The camera pushes in with small amplitude at slow speed toward a medium close-up.",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Camera move rule",
+        "snippet": "Each shot has one camera move, worded with an official verb, with a landing (toward…, revealing…, as…)",
+        "example": "toward… / revealing… / as…",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "POV",
+        "snippet": "The camera holds 's point of view",
+        "example": "The camera holds <Subject 1>'s point of view",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Shake slightly / Shake strongly / Handheld",
+        "snippet": "The camera shakes slightly / strongly as it follows",
+        "example": "The camera shakes slightly as it follows <Subject 1>",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Over-the-shoulder hold",
+        "snippet": "Over the shoulder of <Subject 2>, the camera holds a static shot on <Subject 1>'s face",
+        "example": "Over the shoulder of <Subject 2>, the camera holds a static shot on <Subject 1>'s face",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Rack focus (pull focus)",
+        "snippet": "The camera holds a static shot while the focus shifts smoothly from element 1 in the foreground to element 2 in the background",
+        "example": "The camera holds a static shot while the focus shifts smoothly from the key in the foreground to <Subject 1>'s face in the background",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Subject tracking focus",
+        "snippet": "The camera tracks <Subject 1> … and keeps him centered throughout / The camera never leaves <Subject 1>.",
+        "example": "The camera tracks <Subject 1> … and keeps him centered throughout; or end the shot with The camera never leaves <Subject 1>.",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Tracking stability",
+        "snippet": "steady distance; slow speed",
+        "example": "medium shot → medium-wide shot; add steady distance; slow speed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Camera Motions / Framing",
+        "keyword": "Camera tracking fix",
+        "snippet": "stopping in a clear medium framing",
+        "example": "stopping in a clear medium framing",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Camera Motion Modifiers",
+        "keyword": "Amplitude modifiers",
+        "snippet": "with small amplitude / with large amplitude",
+        "example": "The camera pushes in with small amplitude at slow speed toward the folded letter in her hands.",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motion Modifiers",
+        "keyword": "Speed modifiers",
+        "snippet": "at slow speed / at fast speed",
+        "example": "The camera pans right with large amplitude at fast speed, revealing the open doorway.",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F1 Soft breathy",
+        "snippet": "in a soft, breathy young female voice with a slow, gentle pace",
+        "example": "(S1) says in a soft, breathy young female voice with a slow, gentle pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F2 Bright clear",
+        "snippet": "in a bright, clear young female voice with a lively, brisk pace",
+        "example": "(S1) says in a bright, clear young female voice with a lively, brisk pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F3 Warm velvet",
+        "snippet": "in a warm, velvety female voice in her thirties with a calm, even pace",
+        "example": "(S1) says in a warm, velvety female voice in her thirties with a calm, even pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F4 Low husky",
+        "snippet": "in a low, husky female voice with a slightly smoky texture and an unhurried pace",
+        "example": "(S1) says in a low, husky female voice with a slightly smoky texture and an unhurried pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F5 Crisp authoritative",
+        "snippet": "in a crisp, authoritative mid-low female voice with precise diction and a measured pace",
+        "example": "(S1) says in a crisp, authoritative mid-low female voice with precise diction and a measured pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F6 Fragile trembling",
+        "snippet": "in a thin, fragile young female voice with a slight tremble and a hesitant pace",
+        "example": "(S1) says in a thin, fragile young female voice with a slight tremble and a hesitant pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F7 Rich matriarch",
+        "snippet": "in a rich, resonant older female voice with a slight gravel and a deliberate pace",
+        "example": "(S1) says in a rich, resonant older female voice with a slight gravel and a deliberate pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F8 Elderly frail",
+        "snippet": "in a frail, cracked elderly female voice with a slow pace and small pauses",
+        "example": "(S1) says in a frail, cracked elderly female voice with a slow pace and small pauses, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F9 Playful sassy",
+        "snippet": "in a playful, high, teasing young female voice with a quick, sing-song rhythm",
+        "example": "(S1) says in a playful, high, teasing young female voice with a quick, sing-song rhythm, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F10 Sweet melodic",
+        "snippet": "in a sweet, melodic young female voice, smooth and honeyed, with a gentle, flowing pace",
+        "example": "(S1) says in a sweet, melodic young female voice, smooth and honeyed, with a gentle, flowing pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M1 Deep gravelly",
+        "snippet": "in a deep, gravelly middle-aged male voice with a slow, measured pace",
+        "example": "(S1) says in a deep, gravelly middle-aged male voice with a slow, measured pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M2 Resonant baritone",
+        "snippet": "in a smooth, resonant baritone male voice with a steady, confident pace",
+        "example": "(S1) says in a smooth, resonant baritone male voice with a steady, confident pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M3 Warm gentle",
+        "snippet": "in a warm, gentle young male voice with a soft husk and a relaxed pace",
+        "example": "(S1) says in a warm, gentle young male voice with a soft husk and a relaxed pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M4 Young energetic",
+        "snippet": "in a bright, energetic young male voice with a fast, eager pace",
+        "example": "(S1) says in a bright, energetic young male voice with a fast, eager pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M5 Stern commanding",
+        "snippet": "in a hard, clipped mid-low male voice with a brisk staccato pace",
+        "example": "(S1) says in a hard, clipped mid-low male voice with a brisk staccato pace, Kannada ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M6 Raspy menacing",
+        "snippet": "in a low, raspy male voice, half-whispered, with a slow, menacing drawl",
+        "example": "(S1) says in a low, raspy male voice, half-whispered, with a slow, menacing drawl, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M7 Nasal comic",
+        "snippet": "in a reedy, slightly nasal male voice with a quick, uneven rhythm",
+        "example": "(S1) says in a reedy, slightly nasal male voice with a quick, uneven rhythm, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M8 Elderly wise",
+        "snippet": "in a thin, cracked elderly male voice, warm but tired, with a slow pace",
+        "example": "(S1) says in a thin, cracked elderly male voice, warm but tired, with a slow pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M9 Nervous thin",
+        "snippet": "in a thin, tight young male voice that rushes and stumbles over the words",
+        "example": "(S1) says in a thin, tight young male voice that rushes and stumbles over the words, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M10 Soft-spoken calm",
+        "snippet": "in a soft-spoken, quiet male voice, velvety and calm, with a slow, unhurried pace",
+        "example": "(S1) says in a soft-spoken, quiet male voice, velvety and calm, with a slow, unhurried pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M11 Deep villain bass",
+        "snippet": "in a very deep, cold bass male voice, smooth and resonant, with a slow, deliberate, menacing calm",
+        "example": "(S1) says in a very deep, cold bass male voice, smooth and resonant, with a slow, deliberate, menacing calm, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "K1 girl 6–10",
+        "snippet": "in a small, high, clear little girl's voice",
+        "example": "(S1) says in a small, high, clear little girl's voice, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "K2 boy 6–10",
+        "snippet": "in a small, bright little boy's voice with an excited pace",
+        "example": "(S1) says in a small, bright little boy's voice with an excited pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "Dialogue Delivery",
+        "snippet": "low, natural, close-mic intimacy",
+        "example": "The woman in a warm, velvety voice with a calm, even pace (S1) murmurs softly to herself, Kannada ಇನ್ನೂ ಬಂದಿಲ್ಲ.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "Gravelly / Low whisper / Murmur",
+        "snippet": "(S#) says in a deep, gravelly middle-aged male voice with a slow, measured pace, barely above a murmur, Language Text",
+        "example": "<Subject 1> (S1) says in a deep, gravelly middle-aged male voice with a slow, measured pace, barely above a murmur, Kannada ಇಲ್ಲಿ ಗೋಡೆಗಳಿಗೂ ಕಿವಿ ಇದೆ.",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones / Delivery",
+        "keyword": "Dialogue delivery",
+        "snippet": "conversational, natural volume, mixed Kannada/English where real people would mix",
+        "example": "crisp, authoritative mid-low female voice with precise diction and a measured pace",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Whisper",
+        "snippet": "whispers … barely audible, leaning close",
+        "example": "(S2) whispers in a soft, breathy young female voice, barely audible, Kannada ನನ್ನನ್ನು ಕ್ಷಮಿಸಿ.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Shout",
+        "snippet": "shouts … at full volume, her voice cracking at the top",
+        "example": "(S1) shouts in a hard, clipped mid-low male voice, at full volume, Kannada ನಿಲ್ಲು!",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Stern command",
+        "snippet": "orders firmly … in a low, controlled voice that leaves no room for argument",
+        "example": "(S1) orders firmly in a deep, gravelly middle-aged male voice, Kannada ಒಳಗೆ ಹೋಗು.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Guilty mumble",
+        "snippet": "mumbles … quietly, eyes down, the words trailing off",
+        "example": "(S2) mumbles in a thin, fragile young female voice, quietly, the words trailing off, Kannada ನಾನು ಏನೂ ಮಾಡಿಲ್ಲ.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Sob",
+        "snippet": "says through sobs …, her breath hitching between words",
+        "example": "(S2) says through sobs, her breath hitching between words, Hindi मुझे माफ़ कर दो.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Sarcastic",
+        "snippet": "says … with dry sarcasm, stretching the words and smirking",
+        "example": "(S1) says with dry sarcasm, smirking, English Oh, of course. You're completely innocent.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Interrogation",
+        "snippet": "asks sharply … , leaning in, each question clipped",
+        "example": "(S1) asks sharply, leaning in, Kannada ಸತ್ಯ ಹೇಳು.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Delivery",
+        "keyword": "Theatrical Voice & Pause",
+        "snippet": "declares in a booming, theatrical voice with a dramatic pause before the last word, says with heavy dramatic emphasis, roars",
+        "example": "<Subject 1> (S2) declares in a smooth, resonant baritone male voice, speaking formal, theatrical Hindi, with a dramatic pause before the last word...",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Neutral, composed",
+        "snippet": "her face is calm and composed, her gaze steady, her lips relaxed",
+        "example": "her face is calm and composed, her gaze steady, her lips relaxed",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Guilt",
+        "snippet": "she lowers her head, her eyes downcast and unable to meet his, her lips pressed together, her shoulders slightly hunched",
+        "example": "she lowers her head, her eyes downcast and unable to meet his, her lips pressed together, her shoulders slightly hunched",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Shame",
+        "snippet": "she turns her face partly away, her cheeks tense, her eyes fixed on the floor, one hand gripping her sleeve",
+        "example": "she turns her face partly away, her cheeks tense, her eyes fixed on the floor, one hand gripping her sleeve",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Strict, stern",
+        "snippet": "his jaw is set, his brows drawn slightly together, his eyes hard and unblinking, his mouth a flat line",
+        "example": "his jaw is set, his brows drawn slightly together, his eyes hard and unblinking, his mouth a flat line",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Contempt",
+        "snippet": "one corner of his mouth lifts in a faint sneer, his eyelids half-lowered as he looks down at her",
+        "example": "one corner of his mouth lifts in a faint sneer, his eyelids half-lowered as he looks down at her",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Anger, controlled",
+        "snippet": "his nostrils flare, his jaw tightens, and a vein shows at his temple while his voice stays low",
+        "example": "his nostrils flare, his jaw tightens, and a vein shows at his temple while his voice stays low",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Rage",
+        "snippet": "her eyes widen and blaze, her brows drop hard, her teeth show as she shouts",
+        "example": "her eyes widen and blaze, her brows drop hard, her teeth show as she shouts",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Fear",
+        "snippet": "her eyes widen, her breathing turns quick and shallow, and she presses back against the wall",
+        "example": "her eyes widen, her breathing turns quick and shallow, and she presses back against the wall",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Shock",
+        "snippet": "his eyes snap wide, his mouth falls slightly open, and he freezes mid-step",
+        "example": "his eyes snap wide, his mouth falls slightly open, and he freezes mid-step",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Grief",
+        "snippet": "her face crumples, her chin trembles, and tears spill down her cheeks",
+        "example": "her face crumples, her chin trembles, and tears spill down her cheeks",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Holding back tears",
+        "snippet": "her eyes glisten, she swallows hard and blinks rapidly, forcing her lips into a tight line",
+        "example": "her eyes glisten, she swallows hard and blinks rapidly, forcing her lips into a tight line",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Relief",
+        "snippet": "her shoulders drop, she lets out a long breath, and a small, tired smile appears",
+        "example": "her shoulders drop, she lets out a long breath, and a small, tired smile appears",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Respect",
+        "snippet": "she looks up at him with a quiet, steady gaze and gives a small, respectful nod",
+        "example": "she looks up at him with a quiet, steady gaze and gives a small, respectful nod",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Attraction, subtle",
+        "snippet": "her eyes linger on him a moment longer than needed, a small warm smile forms, and she lowers her gaze softly",
+        "example": "her eyes linger on him a moment longer than needed, a small warm smile forms, and she lowers her gaze softly",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Shy",
+        "snippet": "she smiles with her lips closed, glances up through her lashes, then looks away",
+        "example": "she smiles with her lips closed, glances up through her lashes, then looks away",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Love, tender",
+        "snippet": "his eyes soften, a gentle smile spreads slowly, and he tilts his head toward her",
+        "example": "his eyes soften, a gentle smile spreads slowly, and he tilts his head toward her",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Joy",
+        "snippet": "her face breaks into a wide, open smile, her eyes crinkling at the corners",
+        "example": "her face breaks into a wide, open smile, her eyes crinkling at the corners",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Suspicion",
+        "snippet": "his eyes narrow slightly and flick from her face to her hands and back",
+        "example": "his eyes narrow slightly and flick from her face to her hands and back",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Defiance",
+        "snippet": "she lifts her chin, holds his stare without blinking, and her lips press into a hard line",
+        "example": "she lifts her chin, holds his stare without blinking, and her lips press into a hard line",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Exhaustion",
+        "snippet": "her eyelids are heavy, her face pale, and her shoulders sag as she leans on the bars",
+        "example": "her eyelids are heavy, her face pale, and her shoulders sag as she leans on the bars",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Pleading",
+        "snippet": "her brows rise in the middle, her eyes wet and wide, her hands pressed together in front of her chest",
+        "example": "her brows rise in the middle, her eyes wet and wide, her hands pressed together in front of her chest",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Menace",
+        "snippet": "he smiles slowly without it reaching his eyes, his head tilted slightly, watching her",
+        "example": "he smiles slowly without it reaching his eyes, his head tilted slightly, watching her",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Regret",
+        "snippet": "he closes his eyes for a moment, exhales through his nose, and his mouth tightens",
+        "example": "he closes his eyes for a moment, exhales through his nose, and his mouth tightens",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Determination",
+        "snippet": "his gaze hardens and fixes ahead, his jaw squares, and he gives one short nod",
+        "example": "his gaze hardens and fixes ahead, his jaw squares, and he gives one short nod",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Dramatic Reaction / Widening Eyes",
+        "snippet": "eyes widening on the key word",
+        "example": "His smile drains away, his eyes widen, and the cigar stops halfway to his lips.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Emotion Snippet",
+        "snippet": "eyes description, lips description, facial movement",
+        "example": "her eyes glistening, her lips pressed together. Her breath shudders once. She closes her lips, a single tear runs down her left cheek, and she turns her face slightly toward the wall",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Expression Description",
+        "snippet": "Her jaw is set and her eyes hard as she looks down at him.",
+        "example": "Her jaw is set and her eyes hard as she looks down at him.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Emotional Delivery",
+        "snippet": "His eyes glisten and drop to the ground, his chin trembles, and he swallows hard.",
+        "example": "His eyes glisten and drop to the ground, his chin trembles, and he swallows hard.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Subtle Facial Transition",
+        "snippet": "Her eyes are calm but distant, and a faint, sad smile appears and fades.",
+        "example": "Her eyes are calm but distant, and a faint, sad smile appears and fades.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Lit speaking face rule",
+        "snippet": "keep at least one eye and the mouth lit on a speaking face, so identity and lip-sync read",
+        "example": "...front-facing, half of his face in shadow, one eye and his mouth lit.",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions / Performance",
+        "keyword": "Performance",
+        "snippet": "understated, naturalistic, overlapping glances; emotion shown, rarely stated",
+        "example": "She lifts her chin and holds the officer's stare without blinking, her lips pressing into a hard line...",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions / Framing",
+        "keyword": "Preventing warped faces",
+        "snippet": "shot on an 85mm lens, compressed perspective, natural proportions; centered, steady distance; slow speed",
+        "example": "Move faces to MCU/MS; wide only from behind; add shot on an 85mm lens, compressed perspective, natural proportions; centered, steady distance; slow speed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions / Lip Movement",
+        "keyword": "she closes her lips",
+        "snippet": "she closes her lips",
+        "example": "After a line ends, she closes her lips so the face stops talking.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Annoyance to Hurt",
+        "snippet": "Her annoyance softens into hurt as her brows relax and her eyes drop.",
+        "example": "Her annoyance softens into hurt as her brows relax and her eyes drop.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Stern to Pity",
+        "snippet": "His stern expression flickers, a trace of pity crossing his face before his jaw sets again.",
+        "example": "His stern expression flickers, a trace of pity crossing his face before his jaw sets again.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Guilt to Defiance",
+        "snippet": "Her guilty look hardens into defiance as she raises her eyes to meet his.",
+        "example": "Her guilty look hardens into defiance as she raises her eyes to meet his.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Smile to Suspicion",
+        "snippet": "The smile slowly drains from his face, replaced by cold suspicion.",
+        "example": "The smile slowly drains from his face, replaced by cold suspicion.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Hard Key & Colored Gels",
+        "snippet": "hard frontal studio key, colored gel backlights (red, blue, green) in villain dens and discos; bright flat daylight outdoors",
+        "example": "...standing in a pool of hard white key light with a blue gel rim behind him.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Lighting",
+        "snippet": "soft daylight through windows, overcast exteriors, practical lamps at night; low contrast; faces evenly readable",
+        "example": "Sodium-amber streetlight from below and the cool glow of the living room behind him light his face evenly.",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Motivated Lighting / Key & Fill",
+        "snippet": "motivated by practicals (window, lamp, neon, fire); soft key from one side, deep negative fill; rim light separating the subject; volumetric haze in light shafts",
+        "example": "Warm amber light from a single bulb above the stairwell door rims his shoulders.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Single hard source / Low-key lighting",
+        "snippet": "single hard source; shadows of window blinds striping her face, the shadow of cell bars across the wall; under-lit or side-lit faces; smoke or haze in the beam",
+        "example": "Shot 1 Live-action, cinematic neo-noir look with hard low-key lighting and deep shadows...",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Color Palette",
+        "keyword": "Saturated Colors",
+        "snippet": "saturated reds, magentas, emerald greens and golden yellows; warm skin; candy-colored set walls",
+        "example": "Vintage film, 1980s Hindi masala-film look on grainy 35mm with saturated warm colors and soft diffusion glow...",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Color",
+        "keyword": "Color",
+        "snippet": "muted, slightly desaturated; cool greys and greens by day, sodium-amber streetlight by night",
+        "example": "muted, slightly desaturated color grade",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Color",
+        "keyword": "Color Grading",
+        "snippet": "teal-and-amber grade, warm skin tones against cool shadows; or monochrome-leaning single-hue scenes (all blue night, all amber interior)",
+        "example": "Cool blue dawn light comes through the window and a warm amber glow from a gas stove flame lights her face from below.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Color",
+        "keyword": "Near-monochrome accents",
+        "snippet": "near-monochrome with one accent: sodium orange streetlight, cyan neon, a red tail-light",
+        "example": "...sodium-orange and cold cyan accents...",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Medium Shot framing",
+        "snippet": "Shot 1 Live-action, cinematic, a medium shot at eye level, shot on a 50mm lens with natural proportions, frames...",
+        "example": "Shot 1 Live-action, cinematic, a medium shot at eye level, shot on a 50mm lens with natural proportions, frames a stern Indian woman...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Medium Close-up framing",
+        "snippet": "Shot 2 At , the camera cuts to a medium close-up of , front-facing, shot on an 85mm lens...",
+        "example": "Shot 2 At 00:05.000, the camera cuts to a medium close-up of the young man, front-facing, shot on an 85mm lens...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Wide Shot framing",
+        "snippet": "Shot 1 Live-action, cinematic, a wide shot from behind at eye level shows...",
+        "example": "Shot 1 Live-action, cinematic, a wide shot from behind at eye level shows a young Indian woman in a wet off-white cotton saree running away...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Side Profile Close-up framing",
+        "snippet": "Shot 1 Live-action, cinematic, a medium close-up in clean side profile at eye level, shot on an 85mm lens, frames...",
+        "example": "Shot 1 Live-action, cinematic, a medium close-up in clean side profile at eye level, shot on an 85mm lens, frames an Indian woman in her early thirties...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing / Shot Types",
+        "keyword": "Speaking or readable face framing",
+        "snippet": "Every speaking or readable face is close-up, medium close-up or medium, front or three-quarter",
+        "example": "close-up, medium close-up or medium, front or three-quarter",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Framing / Shot Types",
+        "keyword": "Wide shot restriction",
+        "snippet": "Any wide shot is from behind, an establishing view, or has no readable faces",
+        "example": "from behind, an establishing view, or has no readable faces",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Shot Sizes",
+        "keyword": "Extreme close-up / Close-up / Medium close-up / Medium shot / Medium-wide / Wide / Extreme wide",
+        "snippet": "ECU (eyes/lips), CU (face/reactions), MCU (chest up, default for dialogue), MS (waist up, two-shots), MWS (knees up, entrances), WS (rear views, establishing), EWS (landscapes, tiny figures)",
+        "example": "Inserts: eyes, lips, hands, a key / Default for dialogue / Entrances, door actions, faces not the focus",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Angles",
+        "keyword": "Camera Angles",
+        "snippet": "eye level (default), front-facing, three-quarter, profile (side), over-the-shoulder (OTS), low angle (power), high angle (vulnerability), overhead / top-down, rear, Dutch",
+        "example": "Default, neutral, most face-safe / Dialogue coverage; the far face is front-facing / Power, authority",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Camera / Framing Rules",
+        "keyword": "Lens look",
+        "snippet": "shot on an 85mm lens for CU/MCU, 50mm lens for MS, plus compressed perspective, natural proportions",
+        "example": "Shot descriptions with dialogue or close faces",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Camera / Framing Rules",
+        "keyword": "Cut Timing",
+        "snippet": "At MM:SS.mmm, the camera cuts to …",
+        "example": "At 00:04.000, the camera cuts to …",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Lens",
+        "keyword": "Lens",
+        "snippet": "50mm mediums and 85mm close-ups, moderate depth of field (backgrounds readable, not creamy)",
+        "example": "shot on an 85mm lens",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Lens",
+        "keyword": "Lens Selection & Bokeh",
+        "snippet": "shot on an 85mm lens for faces, 50mm for mediums, anamorphic-style oval bokeh and subtle horizontal flares",
+        "example": "shot on an 85mm lens with anamorphic-style oval bokeh of the city lights behind him",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Lens",
+        "keyword": "Close-up / Medium focal lengths",
+        "snippet": "85mm close-ups with half the face in shadow; 50mm mediums; deep focus for paranoia beats",
+        "example": "Shot 1 A medium shot at eye level, shot on a 50mm lens...",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Eye level MCU lens phrase",
+        "snippet": "framed at eye level in a medium close-up, front-facing, shot on an 85mm lens with compressed perspective and natural proportions",
+        "example": "Detailed shot setup for speaking character",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Tracking distance phrase",
+        "snippet": "centered in the frame, the camera keeps a steady distance",
+        "example": "Tracking shot descriptions",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Face preservation phrase",
+        "snippet": "their faces stay clear, natural and undistorted",
+        "example": "Subject motion / walk-and-talk prompt snippet",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Depth of field phrase",
+        "snippet": "the background falls into soft, shallow depth of field",
+        "example": "Isolating subject from background clutter",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Rear wide phrase",
+        "snippet": "seen from behind in a wide shot, their faces not visible",
+        "example": "Establishing or escort walk-aways",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Visual Style & Opening Composition",
+        "keyword": "Style Descriptors",
+        "snippet": "Live-action, cinematic, 2D-animated, 3D CG, claymation, watercolor, vintage film",
+        "example": "Shot 1 Live-action, cinematic, a medium shot...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Film Style & Texture",
+        "keyword": "Film Grain & Gate Weave",
+        "snippet": "visible 35mm film grain, slight gate weave, faded blacks, occasional dust specks, soft halation",
+        "example": "The target video is in the style of a 1980s Hindi masala film shot on 35mm, with visible film grain, a saturated warm Eastmancolor palette, soft diffusion glow on highlights, hard studio key lighting, slightly faded blacks, and natural proportions.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Texture",
+        "keyword": "Film Texture",
+        "snippet": "fine film grain, gentle halation around highlights",
+        "example": "The target video is in a modern cinematic feature-film style with... fine film grain, shallow depth of field...",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Diffusion & Filters",
+        "keyword": "Soft Diffusion & Star Filter",
+        "snippet": "soft-focus diffusion filter glow, star-filter sparkles on lamps and jewellery (romance and songs)",
+        "example": "Star-filter sparkles glint on her earrings.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Ratio",
+        "keyword": "Aspect Ratio",
+        "snippet": "16:9, 21:9 for T2VA/Ref2VA; 16:9 when the user's edit is 16:9",
+        "example": "Settings: 12 s, 2K, 16:9. / Settings: 10 s, 2K, 21:9.",
+        "source": [
+          "13-style-modern-series.md",
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Dialogue Tags",
+        "keyword": "",
+        "snippet": "Language Text spoken by subject.",
+        "example": "<Subject 1> (S1) points into the cell and orders firmly in a hard, clipped mid-low male voice with a brisk staccato pace, Kannada ಒಳಗೆ ಹೋಗು.",
+        "source": [
+          "10-ref2va.md",
+          "15-troubleshooting.md",
+          "07-languages-and-on-screen-text.md",
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue Control",
+        "keyword": "Dialogue Tag Formatting",
+        "snippet": "(S) says ,",
+        "example": "The older woman with a rich, resonant voice and a slight gravel, speaking Kannada with a rustic North Karnataka accent (S1) says slowly and coldly, Kannada ನಿನ್ನಿಂದ ಈ ಮನೆಗೆ ಅವಮಾನ ಆಯ್ತು.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue Control",
+        "keyword": "Lip Alignment / Non-speaking Rule",
+        "snippet": "She closes her lips and does not blink.",
+        "example": "She closes her lips and does not blink.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue Control",
+        "keyword": "Off-screen Voiceover / Voiceover Control",
+        "snippet": "The  (S) says in an off-screen voiceover, in a :   while her lips remain completely closed.",
+        "example": "The woman (S1) says in an off-screen voiceover, in a warm, velvety female voice with a calm, even pace and a light Indian English accent: English Every morning, the light finds me here. Like it has not given up on me. while her lips remain completely closed.",
+        "source": [
+          "08-t2va.md",
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue and Voice Delivery",
+        "keyword": "Dialogue Formatting",
+        "snippet": "Language Dialogue text",
+        "example": "Kannada ನಾನು ಹೀಗೆ ಮಾಡಬಾರದಿತ್ತು.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue and Voice Delivery",
+        "keyword": "Voice Description Snippet",
+        "snippet": "The subject with a voice characteristics (Speaker ID) delivery manner, Language Dialogue text",
+        "example": "The young woman with a thin, fragile voice and a slight tremble (S1) mumbles quietly, the words trailing off, Kannada ನಾನು ಹೀಗೆ ಮಾಡಬಾರದಿತ್ತು.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue Joins",
+        "keyword": "",
+        "snippet": "",
+        "example": "A line that crosses a cut uses  at both joins to indicate audio continuation.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue Cutoffs",
+        "keyword": "",
+        "snippet": "",
+        "example": "A line cut off by the video end ends with .",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Audio / Dialogue Controls",
+        "keyword": "Speaker identification",
+        "snippet": "Every speaker has an (Sx), a voice phrase at first appearance (library ID or ), and the same voice wording in later shots",
+        "example": "(Sx), library ID,",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Audio / Dialogue Controls",
+        "keyword": "Dialogue formatting",
+        "snippet": "Dialogue is verbatim, in native script, inside Language …",
+        "example": "Language …",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Speakers",
+        "keyword": "(S1), (S2)",
+        "snippet": "(S#) says in a voice identity/delivery description, Language …",
+        "example": "(S1) says in a deep, gravelly middle-aged male voice with a slow, measured pace, Kannada ಒಳಗೆ ಹೋಗು.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Speaker Identification",
+        "keyword": "First Shot Voice Tag",
+        "snippet": "(Sx) says in full voice phrase, ...",
+        "example": "... (S1) says in a hard, clipped mid-low male voice with a brisk staccato pace, Kannada ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Speaker Identification",
+        "keyword": "Subsequent Shot Voice Tag",
+        "snippet": "(Sx) replies/says in the same shortened description, ...",
+        "example": "... (S1) replies in the same hard, clipped voice, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Subject Description (T2VA/I2VA)",
+        "keyword": "Descriptive Subject Tagging",
+        "snippet": "The age/role with a voice description (Sx) says, ...",
+        "example": "The middle-aged officer with a deep, gravelly voice (S1) says, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Emotion and Delivery",
+        "keyword": "Delivery Addition",
+        "snippet": "delivery clauses after voice phrase",
+        "example": "says in a soft, breathy young female voice, barely above a whisper and trembling, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Accents and Dialects",
+        "keyword": "Regional Accents & Dialects",
+        "snippet": "Options include Light Indian English accent, Bengaluru urban Kannada, North Karnataka Kannada, Mysuru Kannada, Mumbai street Hindi, Formal theatrical Hindi, Chennai Tamil, Hyderabad Telugu, Kerala Malayalam, American / British accent",
+        "example": "...says speaking Kannada with a natural Bengaluru urban accent, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Audio Rules",
+        "keyword": "",
+        "snippet": "is the voice-timbre reference for  (SN).",
+        "example": "<Audio 1> is the voice-timbre reference for <Subject 1> (S1).",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Audio References",
+        "keyword": "Audio N Reference",
+        "snippet": "in the voice timbre referenced from",
+        "example": "says in the voice timbre referenced from <Audio 1>, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Audio Style",
+        "keyword": "Studio-Dubbed Audio",
+        "snippet": "the voice sounds studio-dubbed, close and slightly reverberant (80s post-synced dialogue)",
+        "example": "...the voice sounding studio-dubbed and slightly reverberant...",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Audio Elements",
+        "keyword": "Overall Soundscape",
+        "snippet": "overall_soundscape: <ambient sounds, Foley effects, atmosphere>",
+        "example": "overall_soundscape: Heavy rain hammers on tin awnings and splashes in puddles. Two sets of running footsteps slap on wet stone...",
+        "source": [
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Audio Elements",
+        "keyword": "Non-diegetic Music",
+        "snippet": "non_diegetic_music: <instrumentation, tempo, style, dynamic changes>",
+        "example": "non_diegetic_music: Fast, driving taiko-style drums at a quick tempo with a pulsing low synth bass, building in volume until the end.",
+        "source": [
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Audio / Soundscape",
+        "keyword": "Soundscape",
+        "snippet": "realistic location sound (fans, traffic through windows, phones buzzing, pressure-cooker whistle in Indian homes).",
+        "example": "The ceiling fan whirs steadily, traffic and a distant auto-rickshaw horn drift through the window...",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Audio / Music",
+        "keyword": "Score",
+        "snippet": "minimal; soft ambient synth pad, muted electric guitar harmonics, low pulse; often N/A for dialogue scenes.",
+        "example": "A soft ambient synth pad at a slow tempo with muted electric guitar harmonics, staying low under the scene.",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Audio and Dialogue",
+        "keyword": "Silent audio parameters",
+        "snippet": "non_diegetic_music: N/A / overall_soundscape: N/A",
+        "example": "overall_soundscape: N/A and non_diegetic_music: N/A",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Audio and Dialogue",
+        "keyword": "Speaker identification / dialogue attribution",
+        "snippet": "(Sx)",
+        "example": "(Sx) right before the verb; only the speaker's face front-facing; listener lips stay closed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Sound Fields",
+        "keyword": "Soundscape & Non-diegetic Music",
+        "snippet": "overall_soundscape: [1–4 sentences of ambience, physical sounds, non-verbal human sounds \\| N/A], non_diegetic_music: [1–3 sentences of instrumentation, tempo, dynamics \\| N/A]",
+        "example": "overall_soundscape: N/A, non_diegetic_music: N/A",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Sound Effects (Foley)",
+        "keyword": "Exaggerated Foley",
+        "snippet": "exaggerated foley: punchy dhishum punch impacts, whooshing swings, loud cloth swishes, ricochet gunshots",
+        "example": "A sharp whoosh accompanies the zoom.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Music & Score",
+        "keyword": "Dramatic Stings & Disco/Romantic Score",
+        "snippet": "dramatic string-section stings with a crashing cymbal on each zoom, synth-disco bass line with electronic drums and tabla, romantic shehnai and sitar with lush strings, harmonica motif for a lonely hero",
+        "example": "Dramatic string-section stings with a crashing cymbal on the zoom, followed by a held low brass note at a slow tempo.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Sound",
+        "keyword": "Soundscape",
+        "snippet": "detailed and layered (room tone, cloth, breath, distant city), with silence used before big lines. / rain, dripping water, distant sirens, a buzzing neon tube, footsteps in an empty alley",
+        "example": "Wind gusts across the rooftop under a distant hum of city traffic, a far-off siren, and the faint flap of his jacket. / Water drips steadily somewhere in the dark, his boots tap slowly on the wet floor, a sodium lamp buzzes...",
+        "source": [
+          "12-style-cinematic-modern.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Sound",
+        "keyword": "Non-Diegetic Score",
+        "snippet": "sustained low strings, sparse piano, analog synth pads, slow pulsing bass, building or dropping out; write instrumentation, tempo and dynamics only.",
+        "example": "A sparse solo piano at a slow tempo with soft analog synth pads entering underneath and staying quiet. / A slow pulsing synth bass with a single muted trumpet phrase, cutting out just before his line.",
+        "source": [
+          "12-style-cinematic-modern.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "House Audio Rule",
+        "keyword": "Style opening ending clause",
+        "snippet": "The audio contains only the spoken dialogue, with no background music, no ambience, and no sound effects.",
+        "example": "... The audio contains only the spoken dialogue, with no background music, no ambience, and no sound effects.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Visual Retention Markers",
+        "keyword": "Retention Markers",
+        "snippet": "fully_preserved, partially_preserved (used, some features changed), attribute_transfer (feature moves to another subject), weak_reference (broad style/composition/motion only)",
+        "example": "<Subject 1> (appears in Shot 1, Shot 2): fully_preserved - his identity, face, hair, build, and full uniform are retained without changes. / <Video 1> (camera path): weak_reference - broad style/composition/motion only.",
+        "source": [
+          "10-ref2va.md",
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Audio Retention Markers",
+        "keyword": "Retention Markers",
+        "snippet": "fully_copy, partially_copy, reference (-> voice timbre without copying signal/words), weak_reference",
+        "example": "<Audio 1>: fully_copy - complete audio signal reused. / <Audio 1>: reference - the officer's spoken delivery follows the voice timbre of <Audio 1> without copying the original signal or its words.",
+        "source": [
+          "10-ref2va.md",
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Frame-Anchor Phrases",
+        "keyword": "Anchor Phrasing",
+        "snippet": "the shot begins from , the shot's keyframe corresponds to , the shot ends on",
+        "example": "Shot 1 The shot begins from <Picture 3>, the view from deep inside <Subject 3> looking toward the closed barred door...",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Summary Task-Type Prefixes",
+        "keyword": "Task Prefixes",
+        "snippet": "reference generation, keyframe completion, video editing, video continuation, audio reuse, audio reference",
+        "example": "reference generation + keyframe completion In one static shot filmed from inside <Subject 3>...",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Detailed Description Prefixes",
+        "keyword": "The target video is",
+        "snippet": "The target video is … (one or two sentences: style, lighting, color, lens look).",
+        "example": "The target video is realistic and cinematic, with a tense, serious mood, cold fluorescent overhead light, a muted grey-green palette, natural proportions, and smooth, steady camera movement.",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Subject Identity Formatting",
+        "keyword": "identity-locked wording",
+        "snippet": "with his/her face, hair, build, and complete outfit taken exactly from the reference.",
+        "example": "<Subject 1> is the officer in <Picture 1>, with his face, hair, build, and complete uniform taken exactly from the reference.",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Identity Control",
+        "keyword": "Identity-locked phrasing",
+        "snippet": "with his face, hair, build and complete outfit taken exactly from the reference",
+        "example": "use identity-locked phrasing (with his face, hair, build and complete outfit taken exactly from the reference)",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Shot Cuts",
+        "keyword": "cuts to",
+        "snippet": "At time, the shot cuts to ...",
+        "example": "At 00:05.000, the shot cuts to a medium shot from the front at eye level...",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Editing",
+        "keyword": "Reaction Close-ups",
+        "snippet": "reaction close-ups after each punchline; triple-cut emphasis is possible as three short shots (fits 6–10 s)",
+        "example": "...the camera crash-zooms onto his face before a reaction close-up of <Subject 2>.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Editing Rhythm",
+        "keyword": "Editing rhythm",
+        "snippet": "2–3 shots per clip, shot–reverse–shot on dialogue, reaction inserts",
+        "example": "In three shots of shot–reverse–shot coverage in <Subject 3>...",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Instruction Line Template",
+        "keyword": "I2VA Mode Instruction",
+        "snippet": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from Shot 1) is fully referenced.",
+        "example": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from Shot 1) is fully referenced.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Instruction Line Template",
+        "keyword": "FL2VA Mode Instruction",
+        "snippet": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot N) aligns with the S.SS-second mark of the target video.",
+        "example": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Instruction Line Template",
+        "keyword": "L2VA Mode Instruction",
+        "snippet": "How the reference pictures align with the target video — <Picture 1> (from Shot N) aligns with the S.SS-second mark of the target video.",
+        "example": "How the reference pictures align with the target video — <Picture 1> (from Shot 1) aligns with the 7.00-second mark of the target video.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Shot Cuts & Timing",
+        "keyword": "Shot Transition Marker",
+        "snippet": "Shot  At , the camera cuts to...",
+        "example": "Shot 2 At 00:04.000, the camera cuts to a medium shot from the front...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Opening Sentence",
+        "keyword": "Ref2VA Opening",
+        "snippet": "The target video is in a modern cinematic feature-film style with motivated low-key lighting, a teal-and-amber color grade, rich contrast, fine film grain, shallow depth of field, and natural proportions.",
+        "example": "The target video is in a modern cinematic feature-film style with motivated low-key lighting, a teal-and-amber color grade, rich contrast, fine film grain, shallow depth of field, and natural proportions.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Opening Sentence",
+        "keyword": "T2VA / I2VA Opening",
+        "snippet": "Shot 1 Live-action, cinematic, modern feature-film look with motivated low-key lighting and shallow depth of field, framing/shot description…",
+        "example": "Shot 1 Live-action, cinematic, modern feature-film look with motivated low-key lighting and shallow depth of field, a medium close-up frames…",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Performance",
+        "keyword": "Acting Style / Guarded Movement",
+        "snippet": "restrained and internal; emotion in the eyes; few words; still, guarded, minimal blinking; menace through slowness",
+        "example": "His eyes are fixed on something far away, then his jaw sets with quiet determination. / His expression is cold and patient... He closes his lips and holds the stare without blinking.",
+        "source": [
+          "12-style-cinematic-modern.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Mouth Discipline",
+        "keyword": "After the line / Listening faces",
+        "snippet": "She closes her lips and holds his gaze. This stops lip movement continuing into silence. / His lips stay closed as he listens.",
+        "example": "She closes her lips and holds his gaze. / His lips stay closed as he listens.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Control / Delivery",
+        "keyword": "Mouth closure after dialogue",
+        "snippet": "She closes her lips… after ; listeners lips stay closed",
+        "example": "She closes her lips… after ; listeners lips stay closed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Scene Control / Spatial",
+        "keyword": "Empty location clause",
+        "snippet": "the location is otherwise empty; extras softly out of focus if wanted",
+        "example": "say the corridor is otherwise empty; extras softly out of focus if wanted",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Object / Action Mechanics",
+        "keyword": "Door direction / hinge clause",
+        "snippet": "pulls the door toward himself, hinged on the left",
+        "example": "Describe the hinge side and direction once: pulls the door toward himself, hinged on the left; give the door its own beat",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Formatting and Labeling",
+        "keyword": "Formatting Tags & Notation",
+        "snippet": "Subject Reference Tag: , Image Reference Label: , Dialogue Tag Formatting: ... (native script inside), Shot Timing Notation: Shot 1 / mm:ss.ms (e.g. 00:03.000)",
+        "example": "Repeat  at each action / The official label is  / Shot 1 untimed; 00:03.000",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Surfaces",
+        "keyword": "Reflective / Wet surfaces",
+        "snippet": "rain-wet streets, glossy reflections, sweating walls",
+        "example": "The wet floor reflects the orange light.",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "On-Screen Text",
+        "keyword": "Visible Signs / Labels",
+        "snippet": "Put visible signs, labels and captions in English double quotes, verbatim and in their own script.",
+        "example": "Above the gate, a weathered metal board reads \"ಕೇಂದ್ರ ಕಾರಾಗೃಹ\" in white Kannada letters.",
+        "source": [
+          "07-languages-and-on-screen-text.md"
+        ]
+      },
+      {
+        "category": "Shot Timing",
+        "keyword": "Shot N At MM:SS.mmm",
+        "snippet": "Shot N At MM:SS.mmm, the camera cuts to …",
+        "example": "Shot 2 At 00:03.000, the camera cuts to …",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Ref2VA / Style Sentence",
+        "keyword": "Style sentence prefix",
+        "snippet": "Style sentence(s) come before Shot 1 and start The target video is …",
+        "example": "The target video is …",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      }
+    ],
+    "Camera Moves": [
+      {
+        "category": "Camera Motions",
+        "keyword": "Crash Zoom / Slow Zoom",
+        "snippet": "The camera zooms in with large amplitude at fast speed onto  (crash zoom) for shock and dialogue punches, or uses slow zooms in for romance, static frontal compositions, or low angles on the hero.",
+        "example": "On the last word, the camera zooms in with large amplitude at fast speed onto a close-up of his face. / The camera zooms in with small amplitude at slow speed.",
+        "source": [
+          "11-style-80s-bollywood.md",
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Push-in / Pull-out",
+        "snippet": "The camera pushes in with amplitude at speed toward target, or pulls out at speed.",
+        "example": "The camera pushes in with small amplitude at slow speed toward her face. / The camera pulls out at slow speed, revealing the empty corridor behind her.",
+        "source": [
+          "03-camera-motions.md",
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md",
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Slow emotional push-in",
+        "snippet": "The camera pushes in with small amplitude at slow speed toward her face as her eyes fill with tears",
+        "example": "The camera pushes in with small amplitude at slow speed toward her face as her eyes fill with tears",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Dolly zoom (vertigo)",
+        "snippet": "The camera pushes in at slow speed while zooming out, stretching the corridor behind her",
+        "example": "The camera pushes in at slow speed while zooming out, stretching the corridor behind her",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Tracking",
+        "snippet": "The camera tracks  from direction at speed speed, keeping a steady distance. Modes include tracking from front (leading), behind (following), side (parallel), or smoothly via Steadicam.",
+        "example": "The camera tracks <Subject 1> and <Subject 2> from behind at slow speed, keeping a steady distance... / The camera tracks her from the front, moving backward ahead of her at the same pace and keeping a steady distance so her face stays clear and undistorted.",
+        "source": [
+          "10-ref2va.md",
+          "03-camera-motions.md",
+          "08-t2va.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Truck left / right / Truck alongside",
+        "snippet": "The camera trucks left / right at speed alongside",
+        "example": "The camera trucks right at slow speed alongside <Subject 1> as he walks past the cell bars",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Pan left / right / Pan reveal / Whip pan",
+        "snippet": "The camera pans left / right with amplitude at speed, revealing target",
+        "example": "The camera pans right with large amplitude at fast speed, revealing the open doorway. / The camera pans left, revealing the officer standing in the doorway.",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Tilt up / down / Tilt reveal",
+        "snippet": "The camera tilts up / down from source to target",
+        "example": "The camera tilts up from his polished boots to his stern face",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Pedestal / Crane up / down",
+        "snippet": "The camera pedestals up / down with amplitude at speed",
+        "example": "The camera pedestals down at slow speed, settling at eye level with <Subject 1> / The camera pedestals up with large amplitude at slow speed, rising above the prison yard",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Boom + tilt (crane reveal)",
+        "snippet": "The camera pedestals up at slow speed while tilting down onto the courtyard",
+        "example": "The camera pedestals up at slow speed while tilting down onto the courtyard",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Arc (orbit) / 360",
+        "snippet": "The camera arcs around  with amplitude at speed",
+        "example": "The camera arcs around <Subject 1> and <Subject 2> with large amplitude at slow speed",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Roll / Dutch angle",
+        "snippet": "A tilted Dutch-angle medium shot… for a fixed tilt, or The camera rolls clockwise / counterclockwise with amplitude for a moving tilt.",
+        "example": "A tilted Dutch-angle medium shot… / The camera rolls clockwise with small amplitude",
+        "source": [
+          "03-camera-motions.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Static / Static Shot / Locked-off establishing",
+        "snippet": "The camera holds a static shot",
+        "example": "The camera holds a static shot on the prison gate at dawn / as the runner exits the frame.",
+        "source": [
+          "03-camera-motions.md",
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Camera Movement",
+        "snippet": "slow push-ins, smooth tracking, static holds on performance, occasional slow arc. Speed at slow speed by default",
+        "example": "The camera pushes in with small amplitude at slow speed toward him, holding him centered.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Camera",
+        "snippet": "coverage: MCU singles, over-the-shoulder, MS two-shots; the camera shakes slightly for handheld intimacy; static for confrontations; slow push-in for the key line",
+        "example": "The camera pushes in with small amplitude at slow speed toward a medium close-up.",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Camera move rule",
+        "snippet": "Each shot has one camera move, worded with an official verb, with a landing (toward…, revealing…, as…)",
+        "example": "toward… / revealing… / as…",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "POV",
+        "snippet": "The camera holds 's point of view",
+        "example": "The camera holds <Subject 1>'s point of view",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Shake slightly / Shake strongly / Handheld",
+        "snippet": "The camera shakes slightly / strongly as it follows",
+        "example": "The camera shakes slightly as it follows <Subject 1>",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Over-the-shoulder hold",
+        "snippet": "Over the shoulder of <Subject 2>, the camera holds a static shot on <Subject 1>'s face",
+        "example": "Over the shoulder of <Subject 2>, the camera holds a static shot on <Subject 1>'s face",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Rack focus (pull focus)",
+        "snippet": "The camera holds a static shot while the focus shifts smoothly from element 1 in the foreground to element 2 in the background",
+        "example": "The camera holds a static shot while the focus shifts smoothly from the key in the foreground to <Subject 1>'s face in the background",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Subject tracking focus",
+        "snippet": "The camera tracks <Subject 1> … and keeps him centered throughout / The camera never leaves <Subject 1>.",
+        "example": "The camera tracks <Subject 1> … and keeps him centered throughout; or end the shot with The camera never leaves <Subject 1>.",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Camera Motions",
+        "keyword": "Tracking stability",
+        "snippet": "steady distance; slow speed",
+        "example": "medium shot → medium-wide shot; add steady distance; slow speed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Camera Motions / Framing",
+        "keyword": "Camera tracking fix",
+        "snippet": "stopping in a clear medium framing",
+        "example": "stopping in a clear medium framing",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Camera Motion Modifiers",
+        "keyword": "Amplitude modifiers",
+        "snippet": "with small amplitude / with large amplitude",
+        "example": "The camera pushes in with small amplitude at slow speed toward the folded letter in her hands.",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      },
+      {
+        "category": "Camera Motion Modifiers",
+        "keyword": "Speed modifiers",
+        "snippet": "at slow speed / at fast speed",
+        "example": "The camera pans right with large amplitude at fast speed, revealing the open doorway.",
+        "source": [
+          "03-camera-motions.md"
+        ]
+      }
+    ],
+    "Framing & Lens": [
+      {
+        "category": "Facial Expressions / Framing",
+        "keyword": "Preventing warped faces",
+        "snippet": "shot on an 85mm lens, compressed perspective, natural proportions; centered, steady distance; slow speed",
+        "example": "Move faces to MCU/MS; wide only from behind; add shot on an 85mm lens, compressed perspective, natural proportions; centered, steady distance; slow speed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Medium Shot framing",
+        "snippet": "Shot 1 Live-action, cinematic, a medium shot at eye level, shot on a 50mm lens with natural proportions, frames...",
+        "example": "Shot 1 Live-action, cinematic, a medium shot at eye level, shot on a 50mm lens with natural proportions, frames a stern Indian woman...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Medium Close-up framing",
+        "snippet": "Shot 2 At , the camera cuts to a medium close-up of , front-facing, shot on an 85mm lens...",
+        "example": "Shot 2 At 00:05.000, the camera cuts to a medium close-up of the young man, front-facing, shot on an 85mm lens...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Wide Shot framing",
+        "snippet": "Shot 1 Live-action, cinematic, a wide shot from behind at eye level shows...",
+        "example": "Shot 1 Live-action, cinematic, a wide shot from behind at eye level shows a young Indian woman in a wet off-white cotton saree running away...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing and Lens",
+        "keyword": "Side Profile Close-up framing",
+        "snippet": "Shot 1 Live-action, cinematic, a medium close-up in clean side profile at eye level, shot on an 85mm lens, frames...",
+        "example": "Shot 1 Live-action, cinematic, a medium close-up in clean side profile at eye level, shot on an 85mm lens, frames an Indian woman in her early thirties...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Framing / Shot Types",
+        "keyword": "Speaking or readable face framing",
+        "snippet": "Every speaking or readable face is close-up, medium close-up or medium, front or three-quarter",
+        "example": "close-up, medium close-up or medium, front or three-quarter",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Framing / Shot Types",
+        "keyword": "Wide shot restriction",
+        "snippet": "Any wide shot is from behind, an establishing view, or has no readable faces",
+        "example": "from behind, an establishing view, or has no readable faces",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Shot Sizes",
+        "keyword": "Extreme close-up / Close-up / Medium close-up / Medium shot / Medium-wide / Wide / Extreme wide",
+        "snippet": "ECU (eyes/lips), CU (face/reactions), MCU (chest up, default for dialogue), MS (waist up, two-shots), MWS (knees up, entrances), WS (rear views, establishing), EWS (landscapes, tiny figures)",
+        "example": "Inserts: eyes, lips, hands, a key / Default for dialogue / Entrances, door actions, faces not the focus",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Angles",
+        "keyword": "Camera Angles",
+        "snippet": "eye level (default), front-facing, three-quarter, profile (side), over-the-shoulder (OTS), low angle (power), high angle (vulnerability), overhead / top-down, rear, Dutch",
+        "example": "Default, neutral, most face-safe / Dialogue coverage; the far face is front-facing / Power, authority",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Camera / Framing Rules",
+        "keyword": "Lens look",
+        "snippet": "shot on an 85mm lens for CU/MCU, 50mm lens for MS, plus compressed perspective, natural proportions",
+        "example": "Shot descriptions with dialogue or close faces",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Lens",
+        "keyword": "Lens",
+        "snippet": "50mm mediums and 85mm close-ups, moderate depth of field (backgrounds readable, not creamy)",
+        "example": "shot on an 85mm lens",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Lens",
+        "keyword": "Lens Selection & Bokeh",
+        "snippet": "shot on an 85mm lens for faces, 50mm for mediums, anamorphic-style oval bokeh and subtle horizontal flares",
+        "example": "shot on an 85mm lens with anamorphic-style oval bokeh of the city lights behind him",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Lens",
+        "keyword": "Close-up / Medium focal lengths",
+        "snippet": "85mm close-ups with half the face in shadow; 50mm mediums; deep focus for paranoia beats",
+        "example": "Shot 1 A medium shot at eye level, shot on a 50mm lens...",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Eye level MCU lens phrase",
+        "snippet": "framed at eye level in a medium close-up, front-facing, shot on an 85mm lens with compressed perspective and natural proportions",
+        "example": "Detailed shot setup for speaking character",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Tracking distance phrase",
+        "snippet": "centered in the frame, the camera keeps a steady distance",
+        "example": "Tracking shot descriptions",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Face preservation phrase",
+        "snippet": "their faces stay clear, natural and undistorted",
+        "example": "Subject motion / walk-and-talk prompt snippet",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Depth of field phrase",
+        "snippet": "the background falls into soft, shallow depth of field",
+        "example": "Isolating subject from background clutter",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Phrase Bank",
+        "keyword": "Rear wide phrase",
+        "snippet": "seen from behind in a wide shot, their faces not visible",
+        "example": "Establishing or escort walk-aways",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      }
+    ],
+    "Shot Cuts & Editing": [
+      {
+        "category": "Camera / Framing Rules",
+        "keyword": "Cut Timing",
+        "snippet": "At MM:SS.mmm, the camera cuts to …",
+        "example": "At 00:04.000, the camera cuts to …",
+        "source": [
+          "04-framing-and-timing.md"
+        ]
+      },
+      {
+        "category": "Shot Cuts",
+        "keyword": "cuts to",
+        "snippet": "At time, the shot cuts to ...",
+        "example": "At 00:05.000, the shot cuts to a medium shot from the front at eye level...",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Editing",
+        "keyword": "Reaction Close-ups",
+        "snippet": "reaction close-ups after each punchline; triple-cut emphasis is possible as three short shots (fits 6–10 s)",
+        "example": "...the camera crash-zooms onto his face before a reaction close-up of <Subject 2>.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Editing Rhythm",
+        "keyword": "Editing rhythm",
+        "snippet": "2–3 shots per clip, shot–reverse–shot on dialogue, reaction inserts",
+        "example": "In three shots of shot–reverse–shot coverage in <Subject 3>...",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Shot Cuts & Timing",
+        "keyword": "Shot Transition Marker",
+        "snippet": "Shot  At , the camera cuts to...",
+        "example": "Shot 2 At 00:04.000, the camera cuts to a medium shot from the front...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Shot Timing",
+        "keyword": "Shot N At MM:SS.mmm",
+        "snippet": "Shot N At MM:SS.mmm, the camera cuts to …",
+        "example": "Shot 2 At 00:03.000, the camera cuts to …",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      }
+    ],
+    "Voice Library": [
+      {
+        "category": "Vocal Tones",
+        "keyword": "F1 Soft breathy",
+        "snippet": "in a soft, breathy young female voice with a slow, gentle pace",
+        "example": "(S1) says in a soft, breathy young female voice with a slow, gentle pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F2 Bright clear",
+        "snippet": "in a bright, clear young female voice with a lively, brisk pace",
+        "example": "(S1) says in a bright, clear young female voice with a lively, brisk pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F3 Warm velvet",
+        "snippet": "in a warm, velvety female voice in her thirties with a calm, even pace",
+        "example": "(S1) says in a warm, velvety female voice in her thirties with a calm, even pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F4 Low husky",
+        "snippet": "in a low, husky female voice with a slightly smoky texture and an unhurried pace",
+        "example": "(S1) says in a low, husky female voice with a slightly smoky texture and an unhurried pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F5 Crisp authoritative",
+        "snippet": "in a crisp, authoritative mid-low female voice with precise diction and a measured pace",
+        "example": "(S1) says in a crisp, authoritative mid-low female voice with precise diction and a measured pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F6 Fragile trembling",
+        "snippet": "in a thin, fragile young female voice with a slight tremble and a hesitant pace",
+        "example": "(S1) says in a thin, fragile young female voice with a slight tremble and a hesitant pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F7 Rich matriarch",
+        "snippet": "in a rich, resonant older female voice with a slight gravel and a deliberate pace",
+        "example": "(S1) says in a rich, resonant older female voice with a slight gravel and a deliberate pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F8 Elderly frail",
+        "snippet": "in a frail, cracked elderly female voice with a slow pace and small pauses",
+        "example": "(S1) says in a frail, cracked elderly female voice with a slow pace and small pauses, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F9 Playful sassy",
+        "snippet": "in a playful, high, teasing young female voice with a quick, sing-song rhythm",
+        "example": "(S1) says in a playful, high, teasing young female voice with a quick, sing-song rhythm, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "F10 Sweet melodic",
+        "snippet": "in a sweet, melodic young female voice, smooth and honeyed, with a gentle, flowing pace",
+        "example": "(S1) says in a sweet, melodic young female voice, smooth and honeyed, with a gentle, flowing pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M1 Deep gravelly",
+        "snippet": "in a deep, gravelly middle-aged male voice with a slow, measured pace",
+        "example": "(S1) says in a deep, gravelly middle-aged male voice with a slow, measured pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M2 Resonant baritone",
+        "snippet": "in a smooth, resonant baritone male voice with a steady, confident pace",
+        "example": "(S1) says in a smooth, resonant baritone male voice with a steady, confident pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M3 Warm gentle",
+        "snippet": "in a warm, gentle young male voice with a soft husk and a relaxed pace",
+        "example": "(S1) says in a warm, gentle young male voice with a soft husk and a relaxed pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M4 Young energetic",
+        "snippet": "in a bright, energetic young male voice with a fast, eager pace",
+        "example": "(S1) says in a bright, energetic young male voice with a fast, eager pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M5 Stern commanding",
+        "snippet": "in a hard, clipped mid-low male voice with a brisk staccato pace",
+        "example": "(S1) says in a hard, clipped mid-low male voice with a brisk staccato pace, Kannada ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M6 Raspy menacing",
+        "snippet": "in a low, raspy male voice, half-whispered, with a slow, menacing drawl",
+        "example": "(S1) says in a low, raspy male voice, half-whispered, with a slow, menacing drawl, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M7 Nasal comic",
+        "snippet": "in a reedy, slightly nasal male voice with a quick, uneven rhythm",
+        "example": "(S1) says in a reedy, slightly nasal male voice with a quick, uneven rhythm, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M8 Elderly wise",
+        "snippet": "in a thin, cracked elderly male voice, warm but tired, with a slow pace",
+        "example": "(S1) says in a thin, cracked elderly male voice, warm but tired, with a slow pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M9 Nervous thin",
+        "snippet": "in a thin, tight young male voice that rushes and stumbles over the words",
+        "example": "(S1) says in a thin, tight young male voice that rushes and stumbles over the words, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M10 Soft-spoken calm",
+        "snippet": "in a soft-spoken, quiet male voice, velvety and calm, with a slow, unhurried pace",
+        "example": "(S1) says in a soft-spoken, quiet male voice, velvety and calm, with a slow, unhurried pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "M11 Deep villain bass",
+        "snippet": "in a very deep, cold bass male voice, smooth and resonant, with a slow, deliberate, menacing calm",
+        "example": "(S1) says in a very deep, cold bass male voice, smooth and resonant, with a slow, deliberate, menacing calm, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "K1 girl 6–10",
+        "snippet": "in a small, high, clear little girl's voice",
+        "example": "(S1) says in a small, high, clear little girl's voice, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "K2 boy 6–10",
+        "snippet": "in a small, bright little boy's voice with an excited pace",
+        "example": "(S1) says in a small, bright little boy's voice with an excited pace, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      }
+    ],
+    "Vocal Delivery": [
+      {
+        "category": "Vocal Tones",
+        "keyword": "Dialogue Delivery",
+        "snippet": "low, natural, close-mic intimacy",
+        "example": "The woman in a warm, velvety voice with a calm, even pace (S1) murmurs softly to herself, Kannada ಇನ್ನೂ ಬಂದಿಲ್ಲ.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones",
+        "keyword": "Gravelly / Low whisper / Murmur",
+        "snippet": "(S#) says in a deep, gravelly middle-aged male voice with a slow, measured pace, barely above a murmur, Language Text",
+        "example": "<Subject 1> (S1) says in a deep, gravelly middle-aged male voice with a slow, measured pace, barely above a murmur, Kannada ಇಲ್ಲಿ ಗೋಡೆಗಳಿಗೂ ಕಿವಿ ಇದೆ.",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones / Delivery",
+        "keyword": "Dialogue delivery",
+        "snippet": "conversational, natural volume, mixed Kannada/English where real people would mix",
+        "example": "crisp, authoritative mid-low female voice with precise diction and a measured pace",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Whisper",
+        "snippet": "whispers … barely audible, leaning close",
+        "example": "(S2) whispers in a soft, breathy young female voice, barely audible, Kannada ನನ್ನನ್ನು ಕ್ಷಮಿಸಿ.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Shout",
+        "snippet": "shouts … at full volume, her voice cracking at the top",
+        "example": "(S1) shouts in a hard, clipped mid-low male voice, at full volume, Kannada ನಿಲ್ಲು!",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Stern command",
+        "snippet": "orders firmly … in a low, controlled voice that leaves no room for argument",
+        "example": "(S1) orders firmly in a deep, gravelly middle-aged male voice, Kannada ಒಳಗೆ ಹೋಗು.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Guilty mumble",
+        "snippet": "mumbles … quietly, eyes down, the words trailing off",
+        "example": "(S2) mumbles in a thin, fragile young female voice, quietly, the words trailing off, Kannada ನಾನು ಏನೂ ಮಾಡಿಲ್ಲ.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Sob",
+        "snippet": "says through sobs …, her breath hitching between words",
+        "example": "(S2) says through sobs, her breath hitching between words, Hindi मुझे माफ़ कर दो.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Sarcastic",
+        "snippet": "says … with dry sarcasm, stretching the words and smirking",
+        "example": "(S1) says with dry sarcasm, smirking, English Oh, of course. You're completely innocent.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Tones and Deliveries",
+        "keyword": "Interrogation",
+        "snippet": "asks sharply … , leaning in, each question clipped",
+        "example": "(S1) asks sharply, leaning in, Kannada ಸತ್ಯ ಹೇಳು.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Vocal Delivery",
+        "keyword": "Theatrical Voice & Pause",
+        "snippet": "declares in a booming, theatrical voice with a dramatic pause before the last word, says with heavy dramatic emphasis, roars",
+        "example": "<Subject 1> (S2) declares in a smooth, resonant baritone male voice, speaking formal, theatrical Hindi, with a dramatic pause before the last word...",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Emotion and Delivery",
+        "keyword": "Delivery Addition",
+        "snippet": "delivery clauses after voice phrase",
+        "example": "says in a soft, breathy young female voice, barely above a whisper and trembling, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      }
+    ],
+    "Faces & Performance": [
+      {
+        "category": "Facial Expressions",
+        "keyword": "Neutral, composed",
+        "snippet": "her face is calm and composed, her gaze steady, her lips relaxed",
+        "example": "her face is calm and composed, her gaze steady, her lips relaxed",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Guilt",
+        "snippet": "she lowers her head, her eyes downcast and unable to meet his, her lips pressed together, her shoulders slightly hunched",
+        "example": "she lowers her head, her eyes downcast and unable to meet his, her lips pressed together, her shoulders slightly hunched",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Shame",
+        "snippet": "she turns her face partly away, her cheeks tense, her eyes fixed on the floor, one hand gripping her sleeve",
+        "example": "she turns her face partly away, her cheeks tense, her eyes fixed on the floor, one hand gripping her sleeve",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Strict, stern",
+        "snippet": "his jaw is set, his brows drawn slightly together, his eyes hard and unblinking, his mouth a flat line",
+        "example": "his jaw is set, his brows drawn slightly together, his eyes hard and unblinking, his mouth a flat line",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Contempt",
+        "snippet": "one corner of his mouth lifts in a faint sneer, his eyelids half-lowered as he looks down at her",
+        "example": "one corner of his mouth lifts in a faint sneer, his eyelids half-lowered as he looks down at her",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Anger, controlled",
+        "snippet": "his nostrils flare, his jaw tightens, and a vein shows at his temple while his voice stays low",
+        "example": "his nostrils flare, his jaw tightens, and a vein shows at his temple while his voice stays low",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Rage",
+        "snippet": "her eyes widen and blaze, her brows drop hard, her teeth show as she shouts",
+        "example": "her eyes widen and blaze, her brows drop hard, her teeth show as she shouts",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Fear",
+        "snippet": "her eyes widen, her breathing turns quick and shallow, and she presses back against the wall",
+        "example": "her eyes widen, her breathing turns quick and shallow, and she presses back against the wall",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Shock",
+        "snippet": "his eyes snap wide, his mouth falls slightly open, and he freezes mid-step",
+        "example": "his eyes snap wide, his mouth falls slightly open, and he freezes mid-step",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Grief",
+        "snippet": "her face crumples, her chin trembles, and tears spill down her cheeks",
+        "example": "her face crumples, her chin trembles, and tears spill down her cheeks",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Holding back tears",
+        "snippet": "her eyes glisten, she swallows hard and blinks rapidly, forcing her lips into a tight line",
+        "example": "her eyes glisten, she swallows hard and blinks rapidly, forcing her lips into a tight line",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Relief",
+        "snippet": "her shoulders drop, she lets out a long breath, and a small, tired smile appears",
+        "example": "her shoulders drop, she lets out a long breath, and a small, tired smile appears",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Respect",
+        "snippet": "she looks up at him with a quiet, steady gaze and gives a small, respectful nod",
+        "example": "she looks up at him with a quiet, steady gaze and gives a small, respectful nod",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Attraction, subtle",
+        "snippet": "her eyes linger on him a moment longer than needed, a small warm smile forms, and she lowers her gaze softly",
+        "example": "her eyes linger on him a moment longer than needed, a small warm smile forms, and she lowers her gaze softly",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Shy",
+        "snippet": "she smiles with her lips closed, glances up through her lashes, then looks away",
+        "example": "she smiles with her lips closed, glances up through her lashes, then looks away",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Love, tender",
+        "snippet": "his eyes soften, a gentle smile spreads slowly, and he tilts his head toward her",
+        "example": "his eyes soften, a gentle smile spreads slowly, and he tilts his head toward her",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Joy",
+        "snippet": "her face breaks into a wide, open smile, her eyes crinkling at the corners",
+        "example": "her face breaks into a wide, open smile, her eyes crinkling at the corners",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Suspicion",
+        "snippet": "his eyes narrow slightly and flick from her face to her hands and back",
+        "example": "his eyes narrow slightly and flick from her face to her hands and back",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Defiance",
+        "snippet": "she lifts her chin, holds his stare without blinking, and her lips press into a hard line",
+        "example": "she lifts her chin, holds his stare without blinking, and her lips press into a hard line",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Exhaustion",
+        "snippet": "her eyelids are heavy, her face pale, and her shoulders sag as she leans on the bars",
+        "example": "her eyelids are heavy, her face pale, and her shoulders sag as she leans on the bars",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Pleading",
+        "snippet": "her brows rise in the middle, her eyes wet and wide, her hands pressed together in front of her chest",
+        "example": "her brows rise in the middle, her eyes wet and wide, her hands pressed together in front of her chest",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Menace",
+        "snippet": "he smiles slowly without it reaching his eyes, his head tilted slightly, watching her",
+        "example": "he smiles slowly without it reaching his eyes, his head tilted slightly, watching her",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Regret",
+        "snippet": "he closes his eyes for a moment, exhales through his nose, and his mouth tightens",
+        "example": "he closes his eyes for a moment, exhales through his nose, and his mouth tightens",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Determination",
+        "snippet": "his gaze hardens and fixes ahead, his jaw squares, and he gives one short nod",
+        "example": "his gaze hardens and fixes ahead, his jaw squares, and he gives one short nod",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Dramatic Reaction / Widening Eyes",
+        "snippet": "eyes widening on the key word",
+        "example": "His smile drains away, his eyes widen, and the cigar stops halfway to his lips.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions",
+        "keyword": "Emotion Snippet",
+        "snippet": "eyes description, lips description, facial movement",
+        "example": "her eyes glistening, her lips pressed together. Her breath shudders once. She closes her lips, a single tear runs down her left cheek, and she turns her face slightly toward the wall",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Expression Description",
+        "snippet": "Her jaw is set and her eyes hard as she looks down at him.",
+        "example": "Her jaw is set and her eyes hard as she looks down at him.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Emotional Delivery",
+        "snippet": "His eyes glisten and drop to the ground, his chin trembles, and he swallows hard.",
+        "example": "His eyes glisten and drop to the ground, his chin trembles, and he swallows hard.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Subtle Facial Transition",
+        "snippet": "Her eyes are calm but distant, and a faint, sad smile appears and fades.",
+        "example": "Her eyes are calm but distant, and a faint, sad smile appears and fades.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions / Performance",
+        "keyword": "Performance",
+        "snippet": "understated, naturalistic, overlapping glances; emotion shown, rarely stated",
+        "example": "She lifts her chin and holds the officer's stare without blinking, her lips pressing into a hard line...",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Annoyance to Hurt",
+        "snippet": "Her annoyance softens into hurt as her brows relax and her eyes drop.",
+        "example": "Her annoyance softens into hurt as her brows relax and her eyes drop.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Stern to Pity",
+        "snippet": "His stern expression flickers, a trace of pity crossing his face before his jaw sets again.",
+        "example": "His stern expression flickers, a trace of pity crossing his face before his jaw sets again.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Guilt to Defiance",
+        "snippet": "Her guilty look hardens into defiance as she raises her eyes to meet his.",
+        "example": "Her guilty look hardens into defiance as she raises her eyes to meet his.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Emotion Transitions",
+        "keyword": "Smile to Suspicion",
+        "snippet": "The smile slowly drains from his face, replaced by cold suspicion.",
+        "example": "The smile slowly drains from his face, replaced by cold suspicion.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Performance",
+        "keyword": "Acting Style / Guarded Movement",
+        "snippet": "restrained and internal; emotion in the eyes; few words; still, guarded, minimal blinking; menace through slowness",
+        "example": "His eyes are fixed on something far away, then his jaw sets with quiet determination. / His expression is cold and patient... He closes his lips and holds the stare without blinking.",
+        "source": [
+          "12-style-cinematic-modern.md",
+          "14-style-noir-thriller.md"
+        ]
+      }
+    ],
+    "Dialogue & Languages": [
+      {
+        "category": "Facial Expressions & Delivery",
+        "keyword": "Lit speaking face rule",
+        "snippet": "keep at least one eye and the mouth lit on a speaking face, so identity and lip-sync read",
+        "example": "...front-facing, half of his face in shadow, one eye and his mouth lit.",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Facial Expressions / Lip Movement",
+        "keyword": "she closes her lips",
+        "snippet": "she closes her lips",
+        "example": "After a line ends, she closes her lips so the face stops talking.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue Tags",
+        "keyword": "",
+        "snippet": "Language Text spoken by subject.",
+        "example": "<Subject 1> (S1) points into the cell and orders firmly in a hard, clipped mid-low male voice with a brisk staccato pace, Kannada ಒಳಗೆ ಹೋಗು.",
+        "source": [
+          "10-ref2va.md",
+          "15-troubleshooting.md",
+          "07-languages-and-on-screen-text.md",
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue Control",
+        "keyword": "Dialogue Tag Formatting",
+        "snippet": "(S) says ,",
+        "example": "The older woman with a rich, resonant voice and a slight gravel, speaking Kannada with a rustic North Karnataka accent (S1) says slowly and coldly, Kannada ನಿನ್ನಿಂದ ಈ ಮನೆಗೆ ಅವಮಾನ ಆಯ್ತು.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue Control",
+        "keyword": "Lip Alignment / Non-speaking Rule",
+        "snippet": "She closes her lips and does not blink.",
+        "example": "She closes her lips and does not blink.",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue Control",
+        "keyword": "Off-screen Voiceover / Voiceover Control",
+        "snippet": "The  (S) says in an off-screen voiceover, in a :   while her lips remain completely closed.",
+        "example": "The woman (S1) says in an off-screen voiceover, in a warm, velvety female voice with a calm, even pace and a light Indian English accent: English Every morning, the light finds me here. Like it has not given up on me. while her lips remain completely closed.",
+        "source": [
+          "08-t2va.md",
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue and Voice Delivery",
+        "keyword": "Dialogue Formatting",
+        "snippet": "Language Dialogue text",
+        "example": "Kannada ನಾನು ಹೀಗೆ ಮಾಡಬಾರದಿತ್ತು.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue and Voice Delivery",
+        "keyword": "Voice Description Snippet",
+        "snippet": "The subject with a voice characteristics (Speaker ID) delivery manner, Language Dialogue text",
+        "example": "The young woman with a thin, fragile voice and a slight tremble (S1) mumbles quietly, the words trailing off, Kannada ನಾನು ಹೀಗೆ ಮಾಡಬಾರದಿತ್ತು.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Dialogue Joins",
+        "keyword": "",
+        "snippet": "",
+        "example": "A line that crosses a cut uses  at both joins to indicate audio continuation.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Dialogue Cutoffs",
+        "keyword": "",
+        "snippet": "",
+        "example": "A line cut off by the video end ends with .",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Audio / Dialogue Controls",
+        "keyword": "Speaker identification",
+        "snippet": "Every speaker has an (Sx), a voice phrase at first appearance (library ID or ), and the same voice wording in later shots",
+        "example": "(Sx), library ID,",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Audio / Dialogue Controls",
+        "keyword": "Dialogue formatting",
+        "snippet": "Dialogue is verbatim, in native script, inside Language …",
+        "example": "Language …",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Speakers",
+        "keyword": "(S1), (S2)",
+        "snippet": "(S#) says in a voice identity/delivery description, Language …",
+        "example": "(S1) says in a deep, gravelly middle-aged male voice with a slow, measured pace, Kannada ಒಳಗೆ ಹೋಗು.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Speaker Identification",
+        "keyword": "First Shot Voice Tag",
+        "snippet": "(Sx) says in full voice phrase, ...",
+        "example": "... (S1) says in a hard, clipped mid-low male voice with a brisk staccato pace, Kannada ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Speaker Identification",
+        "keyword": "Subsequent Shot Voice Tag",
+        "snippet": "(Sx) replies/says in the same shortened description, ...",
+        "example": "... (S1) replies in the same hard, clipped voice, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Subject Description (T2VA/I2VA)",
+        "keyword": "Descriptive Subject Tagging",
+        "snippet": "The age/role with a voice description (Sx) says, ...",
+        "example": "The middle-aged officer with a deep, gravelly voice (S1) says, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Accents and Dialects",
+        "keyword": "Regional Accents & Dialects",
+        "snippet": "Options include Light Indian English accent, Bengaluru urban Kannada, North Karnataka Kannada, Mysuru Kannada, Mumbai street Hindi, Formal theatrical Hindi, Chennai Tamil, Hyderabad Telugu, Kerala Malayalam, American / British accent",
+        "example": "...says speaking Kannada with a natural Bengaluru urban accent, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Audio and Dialogue",
+        "keyword": "Speaker identification / dialogue attribution",
+        "snippet": "(Sx)",
+        "example": "(Sx) right before the verb; only the speaker's face front-facing; listener lips stay closed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Mouth Discipline",
+        "keyword": "After the line / Listening faces",
+        "snippet": "She closes her lips and holds his gaze. This stops lip movement continuing into silence. / His lips stay closed as he listens.",
+        "example": "She closes her lips and holds his gaze. / His lips stay closed as he listens.",
+        "source": [
+          "06-expressions-and-delivery.md"
+        ]
+      },
+      {
+        "category": "Facial Control / Delivery",
+        "keyword": "Mouth closure after dialogue",
+        "snippet": "She closes her lips… after ; listeners lips stay closed",
+        "example": "She closes her lips… after ; listeners lips stay closed",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "On-Screen Text",
+        "keyword": "Visible Signs / Labels",
+        "snippet": "Put visible signs, labels and captions in English double quotes, verbatim and in their own script.",
+        "example": "Above the gate, a weathered metal board reads \"ಕೇಂದ್ರ ಕಾರಾಗೃಹ\" in white Kannada letters.",
+        "source": [
+          "07-languages-and-on-screen-text.md"
+        ]
+      }
+    ],
+    "Sound & Music": [
+      {
+        "category": "Audio Style",
+        "keyword": "Studio-Dubbed Audio",
+        "snippet": "the voice sounds studio-dubbed, close and slightly reverberant (80s post-synced dialogue)",
+        "example": "...the voice sounding studio-dubbed and slightly reverberant...",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Audio Elements",
+        "keyword": "Overall Soundscape",
+        "snippet": "overall_soundscape: <ambient sounds, Foley effects, atmosphere>",
+        "example": "overall_soundscape: Heavy rain hammers on tin awnings and splashes in puddles. Two sets of running footsteps slap on wet stone...",
+        "source": [
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Audio Elements",
+        "keyword": "Non-diegetic Music",
+        "snippet": "non_diegetic_music: <instrumentation, tempo, style, dynamic changes>",
+        "example": "non_diegetic_music: Fast, driving taiko-style drums at a quick tempo with a pulsing low synth bass, building in volume until the end.",
+        "source": [
+          "08-t2va.md",
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Audio / Soundscape",
+        "keyword": "Soundscape",
+        "snippet": "realistic location sound (fans, traffic through windows, phones buzzing, pressure-cooker whistle in Indian homes).",
+        "example": "The ceiling fan whirs steadily, traffic and a distant auto-rickshaw horn drift through the window...",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Audio / Music",
+        "keyword": "Score",
+        "snippet": "minimal; soft ambient synth pad, muted electric guitar harmonics, low pulse; often N/A for dialogue scenes.",
+        "example": "A soft ambient synth pad at a slow tempo with muted electric guitar harmonics, staying low under the scene.",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Audio and Dialogue",
+        "keyword": "Silent audio parameters",
+        "snippet": "non_diegetic_music: N/A / overall_soundscape: N/A",
+        "example": "overall_soundscape: N/A and non_diegetic_music: N/A",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Sound Fields",
+        "keyword": "Soundscape & Non-diegetic Music",
+        "snippet": "overall_soundscape: [1–4 sentences of ambience, physical sounds, non-verbal human sounds \\| N/A], non_diegetic_music: [1–3 sentences of instrumentation, tempo, dynamics \\| N/A]",
+        "example": "overall_soundscape: N/A, non_diegetic_music: N/A",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      },
+      {
+        "category": "Sound Effects (Foley)",
+        "keyword": "Exaggerated Foley",
+        "snippet": "exaggerated foley: punchy dhishum punch impacts, whooshing swings, loud cloth swishes, ricochet gunshots",
+        "example": "A sharp whoosh accompanies the zoom.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Music & Score",
+        "keyword": "Dramatic Stings & Disco/Romantic Score",
+        "snippet": "dramatic string-section stings with a crashing cymbal on each zoom, synth-disco bass line with electronic drums and tabla, romantic shehnai and sitar with lush strings, harmonica motif for a lonely hero",
+        "example": "Dramatic string-section stings with a crashing cymbal on the zoom, followed by a held low brass note at a slow tempo.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Sound",
+        "keyword": "Soundscape",
+        "snippet": "detailed and layered (room tone, cloth, breath, distant city), with silence used before big lines. / rain, dripping water, distant sirens, a buzzing neon tube, footsteps in an empty alley",
+        "example": "Wind gusts across the rooftop under a distant hum of city traffic, a far-off siren, and the faint flap of his jacket. / Water drips steadily somewhere in the dark, his boots tap slowly on the wet floor, a sodium lamp buzzes...",
+        "source": [
+          "12-style-cinematic-modern.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Sound",
+        "keyword": "Non-Diegetic Score",
+        "snippet": "sustained low strings, sparse piano, analog synth pads, slow pulsing bass, building or dropping out; write instrumentation, tempo and dynamics only.",
+        "example": "A sparse solo piano at a slow tempo with soft analog synth pads entering underneath and staying quiet. / A slow pulsing synth bass with a single muted trumpet phrase, cutting out just before his line.",
+        "source": [
+          "12-style-cinematic-modern.md",
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "House Audio Rule",
+        "keyword": "Style opening ending clause",
+        "snippet": "The audio contains only the spoken dialogue, with no background music, no ambience, and no sound effects.",
+        "example": "... The audio contains only the spoken dialogue, with no background music, no ambience, and no sound effects.",
+        "source": [
+          "02-shared-grammar.md"
+        ]
+      }
+    ],
+    "Lighting, Color & Look": [
+      {
+        "category": "Lighting",
+        "keyword": "Hard Key & Colored Gels",
+        "snippet": "hard frontal studio key, colored gel backlights (red, blue, green) in villain dens and discos; bright flat daylight outdoors",
+        "example": "...standing in a pool of hard white key light with a blue gel rim behind him.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Lighting",
+        "snippet": "soft daylight through windows, overcast exteriors, practical lamps at night; low contrast; faces evenly readable",
+        "example": "Sodium-amber streetlight from below and the cool glow of the living room behind him light his face evenly.",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Motivated Lighting / Key & Fill",
+        "snippet": "motivated by practicals (window, lamp, neon, fire); soft key from one side, deep negative fill; rim light separating the subject; volumetric haze in light shafts",
+        "example": "Warm amber light from a single bulb above the stairwell door rims his shoulders.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Lighting",
+        "keyword": "Single hard source / Low-key lighting",
+        "snippet": "single hard source; shadows of window blinds striping her face, the shadow of cell bars across the wall; under-lit or side-lit faces; smoke or haze in the beam",
+        "example": "Shot 1 Live-action, cinematic neo-noir look with hard low-key lighting and deep shadows...",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Color Palette",
+        "keyword": "Saturated Colors",
+        "snippet": "saturated reds, magentas, emerald greens and golden yellows; warm skin; candy-colored set walls",
+        "example": "Vintage film, 1980s Hindi masala-film look on grainy 35mm with saturated warm colors and soft diffusion glow...",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Color",
+        "keyword": "Color",
+        "snippet": "muted, slightly desaturated; cool greys and greens by day, sodium-amber streetlight by night",
+        "example": "muted, slightly desaturated color grade",
+        "source": [
+          "13-style-modern-series.md"
+        ]
+      },
+      {
+        "category": "Color",
+        "keyword": "Color Grading",
+        "snippet": "teal-and-amber grade, warm skin tones against cool shadows; or monochrome-leaning single-hue scenes (all blue night, all amber interior)",
+        "example": "Cool blue dawn light comes through the window and a warm amber glow from a gas stove flame lights her face from below.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Color",
+        "keyword": "Near-monochrome accents",
+        "snippet": "near-monochrome with one accent: sodium orange streetlight, cyan neon, a red tail-light",
+        "example": "...sodium-orange and cold cyan accents...",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      },
+      {
+        "category": "Visual Style & Opening Composition",
+        "keyword": "Style Descriptors",
+        "snippet": "Live-action, cinematic, 2D-animated, 3D CG, claymation, watercolor, vintage film",
+        "example": "Shot 1 Live-action, cinematic, a medium shot...",
+        "source": [
+          "08-t2va.md"
+        ]
+      },
+      {
+        "category": "Film Style & Texture",
+        "keyword": "Film Grain & Gate Weave",
+        "snippet": "visible 35mm film grain, slight gate weave, faded blacks, occasional dust specks, soft halation",
+        "example": "The target video is in the style of a 1980s Hindi masala film shot on 35mm, with visible film grain, a saturated warm Eastmancolor palette, soft diffusion glow on highlights, hard studio key lighting, slightly faded blacks, and natural proportions.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Texture",
+        "keyword": "Film Texture",
+        "snippet": "fine film grain, gentle halation around highlights",
+        "example": "The target video is in a modern cinematic feature-film style with... fine film grain, shallow depth of field...",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Diffusion & Filters",
+        "keyword": "Soft Diffusion & Star Filter",
+        "snippet": "soft-focus diffusion filter glow, star-filter sparkles on lamps and jewellery (romance and songs)",
+        "example": "Star-filter sparkles glint on her earrings.",
+        "source": [
+          "11-style-80s-bollywood.md"
+        ]
+      },
+      {
+        "category": "Ratio",
+        "keyword": "Aspect Ratio",
+        "snippet": "16:9, 21:9 for T2VA/Ref2VA; 16:9 when the user's edit is 16:9",
+        "example": "Settings: 12 s, 2K, 16:9. / Settings: 10 s, 2K, 21:9.",
+        "source": [
+          "13-style-modern-series.md",
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Surfaces",
+        "keyword": "Reflective / Wet surfaces",
+        "snippet": "rain-wet streets, glossy reflections, sweating walls",
+        "example": "The wet floor reflects the orange light.",
+        "source": [
+          "14-style-noir-thriller.md"
+        ]
+      }
+    ],
+    "Reference Modes": [
+      {
+        "category": "Audio Rules",
+        "keyword": "",
+        "snippet": "is the voice-timbre reference for  (SN).",
+        "example": "<Audio 1> is the voice-timbre reference for <Subject 1> (S1).",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Audio References",
+        "keyword": "Audio N Reference",
+        "snippet": "in the voice timbre referenced from",
+        "example": "says in the voice timbre referenced from <Audio 1>, ...",
+        "source": [
+          "05-voice-library.md"
+        ]
+      },
+      {
+        "category": "Visual Retention Markers",
+        "keyword": "Retention Markers",
+        "snippet": "fully_preserved, partially_preserved (used, some features changed), attribute_transfer (feature moves to another subject), weak_reference (broad style/composition/motion only)",
+        "example": "<Subject 1> (appears in Shot 1, Shot 2): fully_preserved - his identity, face, hair, build, and full uniform are retained without changes. / <Video 1> (camera path): weak_reference - broad style/composition/motion only.",
+        "source": [
+          "10-ref2va.md",
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Audio Retention Markers",
+        "keyword": "Retention Markers",
+        "snippet": "fully_copy, partially_copy, reference (-> voice timbre without copying signal/words), weak_reference",
+        "example": "<Audio 1>: fully_copy - complete audio signal reused. / <Audio 1>: reference - the officer's spoken delivery follows the voice timbre of <Audio 1> without copying the original signal or its words.",
+        "source": [
+          "10-ref2va.md",
+          "16-preflight-checklist.md"
+        ]
+      },
+      {
+        "category": "Frame-Anchor Phrases",
+        "keyword": "Anchor Phrasing",
+        "snippet": "the shot begins from , the shot's keyframe corresponds to , the shot ends on",
+        "example": "Shot 1 The shot begins from <Picture 3>, the view from deep inside <Subject 3> looking toward the closed barred door...",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Summary Task-Type Prefixes",
+        "keyword": "Task Prefixes",
+        "snippet": "reference generation, keyframe completion, video editing, video continuation, audio reuse, audio reference",
+        "example": "reference generation + keyframe completion In one static shot filmed from inside <Subject 3>...",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Subject Identity Formatting",
+        "keyword": "identity-locked wording",
+        "snippet": "with his/her face, hair, build, and complete outfit taken exactly from the reference.",
+        "example": "<Subject 1> is the officer in <Picture 1>, with his face, hair, build, and complete uniform taken exactly from the reference.",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Identity Control",
+        "keyword": "Identity-locked phrasing",
+        "snippet": "with his face, hair, build and complete outfit taken exactly from the reference",
+        "example": "use identity-locked phrasing (with his face, hair, build and complete outfit taken exactly from the reference)",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Instruction Line Template",
+        "keyword": "I2VA Mode Instruction",
+        "snippet": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from Shot 1) is fully referenced.",
+        "example": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from Shot 1) is fully referenced.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Instruction Line Template",
+        "keyword": "FL2VA Mode Instruction",
+        "snippet": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot N) aligns with the S.SS-second mark of the target video.",
+        "example": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 6.00-second mark of the target video.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      },
+      {
+        "category": "Instruction Line Template",
+        "keyword": "L2VA Mode Instruction",
+        "snippet": "How the reference pictures align with the target video — <Picture 1> (from Shot N) aligns with the S.SS-second mark of the target video.",
+        "example": "How the reference pictures align with the target video — <Picture 1> (from Shot 1) aligns with the 7.00-second mark of the target video.",
+        "source": [
+          "09-i2va-fl2va-l2va.md"
+        ]
+      }
+    ],
+    "Prompt Structure": [
+      {
+        "category": "Detailed Description Prefixes",
+        "keyword": "The target video is",
+        "snippet": "The target video is … (one or two sentences: style, lighting, color, lens look).",
+        "example": "The target video is realistic and cinematic, with a tense, serious mood, cold fluorescent overhead light, a muted grey-green palette, natural proportions, and smooth, steady camera movement.",
+        "source": [
+          "10-ref2va.md"
+        ]
+      },
+      {
+        "category": "Opening Sentence",
+        "keyword": "Ref2VA Opening",
+        "snippet": "The target video is in a modern cinematic feature-film style with motivated low-key lighting, a teal-and-amber color grade, rich contrast, fine film grain, shallow depth of field, and natural proportions.",
+        "example": "The target video is in a modern cinematic feature-film style with motivated low-key lighting, a teal-and-amber color grade, rich contrast, fine film grain, shallow depth of field, and natural proportions.",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Opening Sentence",
+        "keyword": "T2VA / I2VA Opening",
+        "snippet": "Shot 1 Live-action, cinematic, modern feature-film look with motivated low-key lighting and shallow depth of field, framing/shot description…",
+        "example": "Shot 1 Live-action, cinematic, modern feature-film look with motivated low-key lighting and shallow depth of field, a medium close-up frames…",
+        "source": [
+          "12-style-cinematic-modern.md"
+        ]
+      },
+      {
+        "category": "Scene Control / Spatial",
+        "keyword": "Empty location clause",
+        "snippet": "the location is otherwise empty; extras softly out of focus if wanted",
+        "example": "say the corridor is otherwise empty; extras softly out of focus if wanted",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Object / Action Mechanics",
+        "keyword": "Door direction / hinge clause",
+        "snippet": "pulls the door toward himself, hinged on the left",
+        "example": "Describe the hinge side and direction once: pulls the door toward himself, hinged on the left; give the door its own beat",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Formatting and Labeling",
+        "keyword": "Formatting Tags & Notation",
+        "snippet": "Subject Reference Tag: , Image Reference Label: , Dialogue Tag Formatting: ... (native script inside), Shot Timing Notation: Shot 1 / mm:ss.ms (e.g. 00:03.000)",
+        "example": "Repeat  at each action / The official label is  / Shot 1 untimed; 00:03.000",
+        "source": [
+          "15-troubleshooting.md"
+        ]
+      },
+      {
+        "category": "Ref2VA / Style Sentence",
+        "keyword": "Style sentence prefix",
+        "snippet": "Style sentence(s) come before Shot 1 and start The target video is …",
+        "example": "The target video is …",
+        "source": [
+          "16-preflight-checklist.md"
+        ]
+      }
+    ]
+  }
+}
