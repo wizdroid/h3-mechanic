@@ -632,11 +632,28 @@ async function renderCard3ShotsAndDialogue(cardElem, clipId, clip, onUpdate) {
       </td>
     `;
 
+    // Attached Action & Events row
+    const trEvents = document.createElement("tr");
+    trEvents.className = "shot-events-row";
+    trEvents.innerHTML = `
+      <td colspan="7" style="padding: 0.25rem 0.5rem 0.55rem 0.5rem; background: rgba(0, 0, 0, 0.05); border-top: none;">
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <span style="font-size: 0.74rem; font-weight: 600; color: var(--accent); white-space: nowrap; display: flex; align-items: center; gap: 0.25rem;">
+            🎬 Action / What happens:
+          </span>
+          <input type="text" class="shot-events" value="${s.events || ""}" 
+                 placeholder="Describe scene action & character interactions (e.g. <Subject 1> rides on the back of <Subject 2> through the clearing, holding the reins firmly)..." 
+                 style="flex: 1; padding: 0.25rem 0.45rem; font-size: 0.78rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
+        </div>
+      </td>
+    `;
+
     // Save shot edits on blur
     const saveShot = async () => {
       const sizeVal = tr.querySelector(".shot-size").value;
       const angleVal = tr.querySelector(".shot-angle").value;
       const camVal = tr.querySelector(".shot-cam").value.trim();
+      const eventsVal = trEvents.querySelector(".shot-events").value.trim();
       const pacingVal = tr.querySelector(".shot-pacing").value;
       let startMs = s.start_ms;
       if (!isShot1) {
@@ -649,6 +666,7 @@ async function renderCard3ShotsAndDialogue(cardElem, clipId, clip, onUpdate) {
           size: sizeVal,
           angle: angleVal,
           camera_phrase: camVal,
+          events: eventsVal,
           pacing: pacingVal,
           start_ms: startMs,
         }),
@@ -659,6 +677,7 @@ async function renderCard3ShotsAndDialogue(cardElem, clipId, clip, onUpdate) {
     tr.querySelector(".shot-angle").addEventListener("change", saveShot);
     tr.querySelector(".shot-cam").addEventListener("blur", saveShot);
     tr.querySelector(".shot-pacing").addEventListener("change", saveShot);
+    trEvents.querySelector(".shot-events").addEventListener("blur", saveShot);
     if (!isShot1) {
       tr.querySelector(".shot-start").addEventListener("blur", saveShot);
     }
@@ -672,6 +691,7 @@ async function renderCard3ShotsAndDialogue(cardElem, clipId, clip, onUpdate) {
     });
 
     tbody.appendChild(tr);
+    tbody.appendChild(trEvents);
   });
 
   // Add Shot Button

@@ -46,6 +46,7 @@ from app.engine.renderer import (
 )
 from app.validation.registry import default_registry, ValidationContext, Violation
 from app.validation.parser import parse_prompt
+from app.validation.estimators import format_ms_timestamp
 from app.llm.fixer import run_fixer_loop
 from app.resources.vocab import get_camera_moves, get_voices, get_styles
 
@@ -411,8 +412,31 @@ async def execute_generation_pipeline(
             # Derive task types for summary writer and retention
             derived_task_types = derive_task_types(clip, references, subject_pictures, speakers)
 
+            # Build detailed shot plan string describing each shot's timing, framing, camera move, and user events
+            shot_plan_items = []
+            for s in shots:
+                s_ord = s.get("ordinal", 1)
+                s_start = format_ms_timestamp(s.get("start_ms", 0))
+                s_size = s.get("size", "a medium shot")
+                s_angle = s.get("angle", "at eye level")
+                s_cam = s.get("camera_move") or s.get("camera_phrase") or "The camera holds a static shot"
+                s_events = (s.get("events") or "").strip()
+                event_desc = f" | Action / Events: {s_events}" if s_events else ""
+
+                # Include dialogue stubs assigned to this shot
+                assigned_line_stubs = []
+                for l_id_key, stub_val in l_map.items():
+                    matching_lines = [l for l in lines if l.get("id") == l_id_key and (l.get("shot_ordinal") == s_ord or l.get("shot_id") == s.get("id"))]
+                    if matching_lines:
+                        assigned_line_stubs.append(stub_val)
+                lines_desc = f" | Dialogue: {', '.join(assigned_line_stubs)}" if assigned_line_stubs else ""
+
+                shot_plan_items.append(f"[Shot {s_ord}] ({s_start}, {s_size}, {s_angle}, Camera: {s_cam}{event_desc}{lines_desc})")
+
+            plan_str = "\n".join(shot_plan_items) if shot_plan_items else f"Clip with {len(shots)} planned shots"
+
             shot_prompt = SHOT_WRITER_PROMPT.format(
-                plan=f"Clip with {len(shots)} planned shots",
+                plan=plan_str,
                 style_opening=style_opening,
                 cut_time_n="00:03.000",
                 sample_placeholder=sample_ph,

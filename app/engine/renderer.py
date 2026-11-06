@@ -448,7 +448,7 @@ def stitch_fallback_prose(
         size = s.get("size", "a medium shot")
         angle = s.get("angle", "at eye level")
         action = s.get("events") or s.get("action_chain") or "the scene unfolds"
-        cam_phrase = s.get("camera_phrase") or "The camera pushes in toward the subject"
+        cam_phrase = s.get("camera_move") or s.get("camera_phrase") or "The camera pushes in toward the subject"
         landing = s.get("landing") or ""
 
         # Gather placeholders belonging to this shot
