@@ -75,7 +75,7 @@ def build_subject_definitions(
             if ref and ref.get("kind") == "image":
                 linked_pics.append((ref.get("ordinal", 1), sp.get("reference_role", "identity_anchor")))
 
-        if role in {"person", "character"}:
+        if role in {"person", "character", "animal", "creature", "dinosaur", "monster", "beast", "robot", "crowd"}:
             identity_pics = [p[0] for p in linked_pics if p[1] == "identity_anchor"]
             outfit_pics = [p[0] for p in linked_pics if p[1] == "outfit"]
 
@@ -103,22 +103,32 @@ def build_subject_definitions(
                     f"with {pronoun} face, hair, build, and complete {outfit_noun} "
                     f"taken exactly from the reference."
                 )
-        elif role == "location":
+        elif role in {"location", "architecture", "interior", "landscape", "background"}:
             if linked_pics:
                 pic_ord = linked_pics[0][0]
                 line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, including its {feature_list} exactly as shown."
             else:
-                line = f"<Subject {ord_num}> is the {role_phrase}, including its {feature_list} defined by text alone."
-        elif role in {"outfit", "accessory", "jewelry", "footwear", "headwear"}:
-            pic_ord = linked_pics[0][0] if linked_pics else 1
-            line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, with its complete appearance and design taken exactly from the reference."
-        elif role in {"prop", "weapon", "vehicle", "furniture", "tool", "device", "instrument"}:
-            pic_ord = linked_pics[0][0] if linked_pics else 1
-            line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, with its shape, material, color, and distinctive details taken exactly from the reference."
+                feat = feature_list or "layout and visual elements"
+                line = f"<Subject {ord_num}> is the {role_phrase}, including its {feat} defined by text alone."
+        elif role in {"outfit", "accessory", "jewelry", "footwear", "headwear", "makeup", "tattoo"}:
+            if linked_pics:
+                pic_ord = linked_pics[0][0]
+                line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, with its complete appearance and design taken exactly from the reference."
+            else:
+                line = f"<Subject {ord_num}> is the {role_phrase}, with its complete appearance and design defined by text alone."
+        elif role in {"prop", "weapon", "vehicle", "furniture", "tool", "device", "instrument", "object", "food", "drink"}:
+            if linked_pics:
+                pic_ord = linked_pics[0][0]
+                line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, with its shape, material, color, and distinctive details taken exactly from the reference."
+            else:
+                line = f"<Subject {ord_num}> is the {role_phrase}, with its shape, material, color, and distinctive details defined by text alone."
         else:
             # Fallback for other subject types
-            pic_ord = linked_pics[0][0] if linked_pics else 1
-            line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, with its details taken exactly from the reference."
+            if linked_pics:
+                pic_ord = linked_pics[0][0]
+                line = f"<Subject {ord_num}> is the {role_phrase} in <Picture {pic_ord}>, with its details taken exactly from the reference."
+            else:
+                line = f"<Subject {ord_num}> is the {role_phrase}, with its details defined by text alone."
 
         # Clean any accidental double spaces
         line = " ".join(line.split())

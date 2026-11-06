@@ -145,6 +145,70 @@ def test_subject_definitions_many_to_many_and_zero_pictures():
     assert lines[4] == "<Audio 1> is the voice-timbre reference for <Subject 1> (S1)."
 
 
+def test_subject_definitions_extended_roles():
+    """Verify that extended subject roles (dinosaur, creature, animal, object, prop) format correctly."""
+    subjects = [
+        {
+            "id": 1,
+            "ordinal": 1,
+            "role": "dinosaur",
+            "role_phrase": "velociraptor",
+            "pronoun": "its",
+            "outfit_noun": "scales",
+            "appositive": "a pack hunter",
+            "feature_list": "",
+        },
+        {
+            "id": 2,
+            "ordinal": 2,
+            "role": "object",
+            "role_phrase": "glowing relic",
+            "pronoun": "its",
+            "outfit_noun": "",
+            "appositive": "",
+            "feature_list": "",
+        },
+        {
+            "id": 3,
+            "ordinal": 3,
+            "role": "animal",
+            "role_phrase": "raven",
+            "pronoun": "its",
+            "outfit_noun": "feathers",
+            "appositive": "",
+            "feature_list": "",
+        },
+    ]
+
+    references = [
+        {"id": 101, "kind": "image", "ordinal": 1, "position": 1},
+        {"id": 102, "kind": "image", "ordinal": 2, "position": 2},
+    ]
+
+    # Subject 1 has Picture 1
+    # Subject 2 has Picture 2
+    # Subject 3 has 0 pictures (text-only)
+    subject_pictures = [
+        {"subject_id": 1, "reference_id": 101, "reference_role": "identity_anchor"},
+        {"subject_id": 2, "reference_id": 102, "reference_role": "identity_anchor"},
+    ]
+
+    defs = build_subject_definitions(
+        subjects=subjects,
+        subject_pictures=subject_pictures,
+        references=references,
+    )
+
+    lines = defs.splitlines()
+    assert len(lines) == 3
+    # Dinosaur with picture:
+    assert lines[0] == "<Subject 1> is the velociraptor in <Picture 1>, a pack hunter, with its face, hair, build, and complete scales taken exactly from the reference."
+    # Object with picture:
+    assert lines[1] == "<Subject 2> is the glowing relic in <Picture 2>, with its shape, material, color, and distinctive details taken exactly from the reference."
+    # Animal with 0 pictures:
+    assert lines[2] == "<Subject 3> is the raven with its appearance, facial features, build, and complete feathers defined by text alone."
+
+
 # ==============================================================================
 # 2. HARD BUDGET SAFEGUARDS (S-02 / §6.1, PF-20, Criterion A-11)
 # ==============================================================================

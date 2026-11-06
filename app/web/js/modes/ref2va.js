@@ -318,17 +318,67 @@ async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
     <!-- Add Subject Form -->
     <div style="background: var(--bg-elevated); padding: 0.6rem; border-radius: 5px; border: 1px solid var(--border-color);">
       <div style="font-size: 0.8rem; font-weight: bold; margin-bottom: 0.4rem; color: var(--text-primary);">+ Add Subject</div>
-      <div style="display: grid; grid-template-columns: 110px 1fr 70px 100px auto; gap: 0.4rem; align-items: center;">
+      <div style="display: grid; grid-template-columns: 140px 1fr 70px 100px auto; gap: 0.4rem; align-items: center;">
         <select id="new-sub-role" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
-          <option value="person">person</option>
-          <option value="character">character</option>
-          <option value="location">location</option>
-          <option value="outfit">outfit</option>
-          <option value="prop">prop</option>
-          <option value="weapon">weapon</option>
-          <option value="vehicle">vehicle</option>
+          <optgroup label="Characters & Beings">
+            <option value="person" selected>person</option>
+            <option value="character">character</option>
+            <option value="animal">animal</option>
+            <option value="creature">creature</option>
+            <option value="dinosaur">dinosaur</option>
+            <option value="monster">monster</option>
+            <option value="beast">beast</option>
+            <option value="robot">robot / android</option>
+            <option value="crowd">crowd / group</option>
+            <option value="body_part">body part</option>
+            <option value="face">face</option>
+            <option value="hair">hair</option>
+          </optgroup>
+          <optgroup label="Objects & Items">
+            <option value="object">object</option>
+            <option value="prop">prop</option>
+            <option value="weapon">weapon</option>
+            <option value="vehicle">vehicle</option>
+            <option value="tool">tool</option>
+            <option value="device">device / tech</option>
+            <option value="instrument">instrument</option>
+            <option value="furniture">furniture</option>
+            <option value="food">food</option>
+            <option value="drink">drink</option>
+          </optgroup>
+          <optgroup label="Apparel & Adornment">
+            <option value="outfit">outfit</option>
+            <option value="accessory">accessory</option>
+            <option value="jewelry">jewelry</option>
+            <option value="footwear">footwear</option>
+            <option value="headwear">headwear</option>
+            <option value="makeup">makeup</option>
+            <option value="tattoo">tattoo</option>
+          </optgroup>
+          <optgroup label="Environment & Setting">
+            <option value="location">location</option>
+            <option value="architecture">architecture</option>
+            <option value="interior">interior</option>
+            <option value="landscape">landscape</option>
+            <option value="background">background</option>
+            <option value="plant">plant / flora</option>
+          </optgroup>
+          <optgroup label="Atmosphere & Visual Elements">
+            <option value="weather">weather</option>
+            <option value="lighting">lighting</option>
+            <option value="color_palette">color palette</option>
+            <option value="effect">visual effect</option>
+            <option value="particle">particles</option>
+            <option value="texture">texture</option>
+            <option value="material">material</option>
+            <option value="pattern">pattern</option>
+            <option value="symbol">symbol / insignia</option>
+            <option value="logo">logo</option>
+            <option value="text">text / inscription</option>
+            <option value="other">other</option>
+          </optgroup>
         </select>
-        <input type="text" id="new-sub-role-phrase" placeholder="officer" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
+        <input type="text" id="new-sub-role-phrase" placeholder="e.g. officer, velociraptor, sword" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
         <select id="new-sub-pronoun" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
           <option value="his">his</option>
           <option value="her">her</option>

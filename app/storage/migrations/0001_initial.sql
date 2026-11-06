@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS subjects (
   id INTEGER PRIMARY KEY,
   clip_id INTEGER NOT NULL REFERENCES clips(id) ON DELETE CASCADE,
   ordinal INTEGER NOT NULL CHECK(ordinal >= 1),
-  role TEXT NOT NULL CHECK(role IN ('person', 'character', 'crowd', 'body_part', 'face', 'hair', 'expression', 'pose', 'animal', 'creature', 'plant', 'robot', 'outfit', 'accessory', 'jewelry', 'footwear', 'headwear', 'makeup', 'tattoo', 'prop', 'weapon', 'vehicle', 'furniture', 'food', 'drink', 'tool', 'device', 'instrument', 'location', 'architecture', 'interior', 'landscape', 'background', 'weather', 'time_of_day', 'season', 'lighting', 'color_palette', 'texture', 'material', 'pattern', 'effect', 'particle', 'camera_angle', 'composition', 'style', 'art_medium', 'text', 'logo', 'symbol', 'other')),
+  role TEXT NOT NULL CHECK(role IN ('person', 'character', 'crowd', 'body_part', 'face', 'hair', 'expression', 'pose', 'animal', 'creature', 'dinosaur', 'monster', 'beast', 'plant', 'robot', 'outfit', 'accessory', 'jewelry', 'footwear', 'headwear', 'makeup', 'tattoo', 'object', 'prop', 'weapon', 'vehicle', 'furniture', 'food', 'drink', 'tool', 'device', 'instrument', 'location', 'architecture', 'interior', 'landscape', 'background', 'weather', 'time_of_day', 'season', 'lighting', 'color_palette', 'texture', 'material', 'pattern', 'effect', 'particle', 'camera_angle', 'composition', 'style', 'art_medium', 'text', 'logo', 'symbol', 'other')),
   role_phrase TEXT NOT NULL DEFAULT '',
   pronoun TEXT NOT NULL DEFAULT 'her' CHECK(pronoun IN ('his','her','its')),
   outfit_noun TEXT NOT NULL DEFAULT 'outfit',
