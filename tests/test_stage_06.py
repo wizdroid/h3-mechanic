@@ -242,6 +242,44 @@ async def test_frame_mode_references_crud_and_resequencing():
         assert refs_after[0]["position"] == 1
         assert refs_after[0]["ordinal"] == 1
 
+        # 6. Direct GET and PUT /api/references/{id}
+        get_direct = await client.get(f"/api/references/{r2_id}")
+        assert get_direct.status_code == 200
+        assert get_direct.json()["id"] == r2_id
+
+        put_direct = await client.put(f"/api/references/{r2_id}", json={"caption": "Updated caption"})
+        assert put_direct.status_code == 200
+        assert put_direct.json()["caption"] == "Updated caption"
+
+        # 7. Add another reference, reorder, then direct DELETE /api/references/{id}
+        r3_res = await client.post(
+            f"/api/clips/{cid}/references",
+            json={"kind": "image", "caption": "Frame 3", "role_hint": "keyframe"},
+        )
+        assert r3_res.status_code == 200
+        r3_id = r3_res.json()["id"]
+
+        # Reorder [r3, r2]
+        reorder_res = await client.post(
+            f"/api/clips/{cid}/references/reorder",
+            json={"reference_ids": [r3_id, r2_id]},
+        )
+        assert reorder_res.status_code == 200
+        reordered = reorder_res.json()["references"]
+        assert reordered[0]["id"] == r3_id
+        assert reordered[0]["position"] == 1
+        assert reordered[1]["id"] == r2_id
+        assert reordered[1]["position"] == 2
+
+        # Direct delete /api/references/{id}
+        del_direct = await client.delete(f"/api/references/{r3_id}")
+        assert del_direct.status_code == 200
+        list_final = await client.get(f"/api/clips/{cid}/references")
+        assert len(list_final.json()) == 1
+        assert list_final.json()[0]["id"] == r2_id
+        assert list_final.json()[0]["position"] == 1
+        assert list_final.json()[0]["ordinal"] == 1
+
 
 # ==============================================================================
 # 4. FL2VA SINGLE-SHOT EXCEPTION & GENERATION (Criterion A-12, Checkpoints 1, 2)

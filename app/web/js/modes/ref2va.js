@@ -183,13 +183,19 @@ async function renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged) {
         const temp = newOrder[idx - 1];
         newOrder[idx - 1] = newOrder[idx];
         newOrder[idx] = temp;
-        await fetch(`/api/clips/${clipId}/references/reorder`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ reference_ids: newOrder.map((r) => r.id) }),
-        });
-        renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged);
-        if (onRefsChanged) onRefsChanged();
+        try {
+          const res = await fetch(`/api/clips/${clipId}/references/reorder`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ reference_ids: newOrder.map((r) => r.id) }),
+          });
+          if (res.ok) {
+            renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged);
+            if (onRefsChanged) onRefsChanged();
+          }
+        } catch (e) {
+          console.error("Failed to reorder references:", e);
+        }
       }
     });
 
@@ -200,22 +206,39 @@ async function renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged) {
         const temp = newOrder[idx + 1];
         newOrder[idx + 1] = newOrder[idx];
         newOrder[idx] = temp;
-        await fetch(`/api/clips/${clipId}/references/reorder`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ reference_ids: newOrder.map((r) => r.id) }),
-        });
-        renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged);
-        if (onRefsChanged) onRefsChanged();
+        try {
+          const res = await fetch(`/api/clips/${clipId}/references/reorder`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ reference_ids: newOrder.map((r) => r.id) }),
+          });
+          if (res.ok) {
+            renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged);
+            if (onRefsChanged) onRefsChanged();
+          }
+        } catch (e) {
+          console.error("Failed to reorder references:", e);
+        }
       }
     });
 
     // Delete
     row.querySelector(".btn-del-ref")?.addEventListener("click", async () => {
-      if (confirm(`Delete reference ${labelStr}?`)) {
-        await fetch(`/api/references/${ref.id}`, { method: "DELETE" });
-        renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged);
-        if (onRefsChanged) onRefsChanged();
+      const plainLabel = ref.kind === "image" ? `<Picture ${ref.ordinal}>` : (ref.kind === "video" ? `<Video ${ref.ordinal}>` : `<Audio ${ref.ordinal}>`);
+      if (confirm(`Delete reference ${plainLabel}?`)) {
+        try {
+          const res = await fetch(`/api/clips/${clipId}/references/${ref.id}`, { method: "DELETE" });
+          if (res.ok) {
+            renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged);
+            if (onRefsChanged) onRefsChanged();
+          } else {
+            const err = await res.json().catch(() => ({}));
+            alert(`Failed to delete reference: ${err.detail?.error?.message || res.statusText}`);
+          }
+        } catch (e) {
+          console.error("Failed to delete reference:", e);
+          alert("Network error deleting reference");
+        }
       }
     });
 
@@ -625,9 +648,18 @@ async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
         <span class="btn-del-link" style="cursor: pointer; color: var(--nord11); font-weight: bold;">×</span>
       `;
       chip.querySelector(".btn-del-link").addEventListener("click", async () => {
-        await fetch(`/api/subject-pictures/${link.id}`, { method: "DELETE" });
-        renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
-        if (onSubjectsChanged) onSubjectsChanged();
+        try {
+          const res = await fetch(`/api/subject-pictures/${link.id}`, { method: "DELETE" });
+          if (res.ok) {
+            renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
+            if (onSubjectsChanged) onSubjectsChanged();
+          } else {
+            const err = await res.json().catch(() => ({}));
+            alert(`Failed to remove picture link: ${err.detail?.error?.message || res.statusText}`);
+          }
+        } catch (e) {
+          console.error("Failed to delete subject-picture link:", e);
+        }
       });
       chipsBox.appendChild(chip);
     });
@@ -637,26 +669,44 @@ async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
       const picId = parseInt(sBox.querySelector(".sel-link-pic").value, 10);
       const linkRole = sBox.querySelector(".sel-link-role").value;
       if (!picId) return;
-      await fetch(`/api/clips/${clipId}/subject-pictures`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          subject_id: subj.id,
-          reference_id: picId,
-          reference_role: linkRole,
-          anchor_shot_ordinal: 1,
-        }),
-      });
-      renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
-      if (onSubjectsChanged) onSubjectsChanged();
+      try {
+        const res = await fetch(`/api/clips/${clipId}/subject-pictures`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            subject_id: subj.id,
+            reference_id: picId,
+            reference_role: linkRole,
+            anchor_shot_ordinal: 1,
+          }),
+        });
+        if (res.ok) {
+          renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
+          if (onSubjectsChanged) onSubjectsChanged();
+        } else {
+          const err = await res.json().catch(() => ({}));
+          alert(`Failed to link picture: ${err.detail?.error?.message || res.statusText}`);
+        }
+      } catch (e) {
+        console.error("Failed to add picture link:", e);
+      }
     });
 
     // Delete Subject Button
     sBox.querySelector(".btn-del-subj").addEventListener("click", async () => {
-      if (confirm(`Delete subject ${labelStr}?`)) {
-        await fetch(`/api/subjects/${subj.id}`, { method: "DELETE" });
-        renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
-        if (onSubjectsChanged) onSubjectsChanged();
+      if (confirm(`Delete subject <Subject ${subj.ordinal}>?`)) {
+        try {
+          const res = await fetch(`/api/subjects/${subj.id}`, { method: "DELETE" });
+          if (res.ok) {
+            renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
+            if (onSubjectsChanged) onSubjectsChanged();
+          } else {
+            const err = await res.json().catch(() => ({}));
+            alert(`Failed to delete subject: ${err.detail?.error?.message || res.statusText}`);
+          }
+        } catch (e) {
+          console.error("Failed to delete subject:", e);
+        }
       }
     });
 

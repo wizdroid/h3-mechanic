@@ -43,6 +43,10 @@ class ReferenceUpdate(BaseModel):
     duration_ms: Optional[int] = None
 
 
+class ReferenceReorderRequest(BaseModel):
+    reference_ids: list[int]
+
+
 def _resequence_reference_tokens(cur: sqlite3.Cursor, clip_id: int) -> None:
     """
     Re-sequence positions 1..N and ordinals 1..K per kind (§6.4).
@@ -226,6 +230,128 @@ def update_reference_token(clip_id: int, ref_id: int, updates: ReferenceUpdate) 
 
         cur.execute("SELECT * FROM references_tokens WHERE id = ?", (ref_id,))
         return dict(cur.fetchone())
+
+
+@router.post("/clips/{clip_id}/references/reorder")
+def reorder_reference_tokens(clip_id: int, body: ReferenceReorderRequest) -> dict[str, Any]:
+    """
+    POST /api/clips/{id}/references/reorder - reorder reference tokens in a clip.
+    Sets position based on provided reference_ids list order and re-sequences ordinals (§6.4).
+    """
+    now_iso = datetime.now(timezone.utc).isoformat()
+    with get_connection() as conn:
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+
+        # Temporary shift to avoid unique constraint collision
+        cur.execute("UPDATE references_tokens SET position = position + 1000000 WHERE clip_id = ?", (clip_id,))
+
+        for new_pos, rid in enumerate(body.reference_ids, start=1):
+            cur.execute(
+                "UPDATE references_tokens SET position = ? WHERE id = ? AND clip_id = ?",
+                (new_pos, rid, clip_id),
+            )
+
+        _resequence_reference_tokens(cur, clip_id)
+
+        cur.execute(
+            "UPDATE clips SET inputs_revision = inputs_revision + 1, revision = revision + 1, updated_at = ? WHERE id = ?",
+            (now_iso, clip_id),
+        )
+        conn.commit()
+
+        cur.execute("SELECT * FROM references_tokens WHERE clip_id = ? ORDER BY position ASC", (clip_id,))
+        return {"status": "reordered", "references": [dict(r) for r in cur.fetchall()]}
+
+
+@router.get("/references/{ref_id}")
+def get_reference_token_direct(ref_id: int) -> dict[str, Any]:
+    """GET /api/references/{id} - get reference token by id directly."""
+    with get_connection() as conn:
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM references_tokens WHERE id = ?", (ref_id,))
+        row = cur.fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail={"error": {"code": "not_found", "message": f"Reference {ref_id} not found"}})
+        return dict(row)
+
+
+@router.put("/references/{ref_id}")
+def update_reference_token_direct(ref_id: int, updates: ReferenceUpdate) -> dict[str, Any]:
+    """PUT /api/references/{id} - update reference metadata directly by id."""
+    now_iso = datetime.now(timezone.utc).isoformat()
+    with get_connection() as conn:
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+
+        cur.execute("SELECT id, clip_id FROM references_tokens WHERE id = ?", (ref_id,))
+        row = cur.fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail={"error": {"code": "not_found", "message": f"Reference {ref_id} not found"}})
+        clip_id = row["clip_id"]
+
+        set_clauses = ["updated_at = ?"]
+        params = [now_iso]
+
+        if updates.caption is not None:
+            set_clauses.append("caption = ?")
+            params.append(updates.caption.strip() if updates.caption else None)
+        if updates.role_hint is not None:
+            set_clauses.append("role_hint = ?")
+            params.append(updates.role_hint.strip() if updates.role_hint else None)
+        if updates.source_file is not None:
+            set_clauses.append("source_file = ?")
+            params.append(updates.source_file.strip() if updates.source_file else None)
+        if updates.width_px is not None:
+            set_clauses.append("width_px = ?")
+            params.append(updates.width_px)
+        if updates.height_px is not None:
+            set_clauses.append("height_px = ?")
+            params.append(updates.height_px)
+        if updates.duration_ms is not None:
+            set_clauses.append("duration_ms = ?")
+            params.append(updates.duration_ms)
+
+        params.append(ref_id)
+        cur.execute(f"UPDATE references_tokens SET {', '.join(set_clauses)} WHERE id = ?", params)
+        cur.execute(
+            "UPDATE clips SET inputs_revision = inputs_revision + 1, revision = revision + 1, updated_at = ? WHERE id = ?",
+            (now_iso, clip_id),
+        )
+        conn.commit()
+
+        cur.execute("SELECT * FROM references_tokens WHERE id = ?", (ref_id,))
+        return dict(cur.fetchone())
+
+
+@router.delete("/references/{ref_id}")
+def delete_reference_token_direct(ref_id: int) -> dict[str, Any]:
+    """
+    DELETE /api/references/{id} - remove reference token by id directly.
+    Re-sequences remaining positions and ordinals sequentially (§6.4).
+    """
+    now_iso = datetime.now(timezone.utc).isoformat()
+    with get_connection() as conn:
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+
+        cur.execute("SELECT id, clip_id FROM references_tokens WHERE id = ?", (ref_id,))
+        row = cur.fetchone()
+        if not row:
+            raise HTTPException(status_code=404, detail={"error": {"code": "not_found", "message": f"Reference {ref_id} not found"}})
+        clip_id = row["clip_id"]
+
+        cur.execute("DELETE FROM references_tokens WHERE id = ?", (ref_id,))
+        _resequence_reference_tokens(cur, clip_id)
+
+        cur.execute(
+            "UPDATE clips SET inputs_revision = inputs_revision + 1, revision = revision + 1, updated_at = ? WHERE id = ?",
+            (now_iso, clip_id),
+        )
+        conn.commit()
+
+    return {"status": "deleted", "reference_id": ref_id}
 
 
 @router.delete("/clips/{clip_id}/references/{ref_id}")
