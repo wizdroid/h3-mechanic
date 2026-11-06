@@ -1,0 +1,14 @@
+{
+  "visual": [
+    "fully_preserved",
+    "partially_preserved",
+    "attribute_transfer",
+    "weak_reference"
+  ],
+  "audio": [
+    "fully_copy",
+    "partially_copy",
+    "reference",
+    "weak_reference"
+  ]
+}

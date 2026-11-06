@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H3 Prompt Studio</title>
+  <link rel="stylesheet" href="/css/nord.css">
+</head>
+<body class="nord-dark">
+  <!-- Top App Header (§4.1, §4.3) -->
+  <header class="app-header">
+    <div class="brand">
+      <span>✦ H3 PROMPT STUDIO</span>
+      <span class="badge badge-version">v0.3</span>
+      <span id="autosave-indicator" class="badge badge-saved">Saved</span>
+    </div>
+
+    <!-- Top Navigation Tabs (§4.3) -->
+    <nav class="top-nav">
+      <button id="tab-generator" class="tab-btn active" data-tab="generator">Generator</button>
+      <button id="tab-settings" class="tab-btn" data-tab="settings">Settings</button>
+    </nav>
+
+    <!-- Header Controls: Project & Theme -->
+    <div class="header-controls">
+      <div class="project-select-group">
+        <label for="project-select" style="font-size: 0.8rem; color: var(--text-secondary);">Project:</label>
+        <select id="project-select"></select>
+        <button id="btn-new-project" class="btn" title="Create New Project">+</button>
+      </div>
+      <div class="theme-select-group">
+        <select id="theme-select" title="Switch Theme">
+          <option value="nord-dark">Nord Dark</option>
+          <option value="nord-coloured">Nord Coloured</option>
+          <option value="nord-light">Nord Light</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- VIEW 1: GENERATOR TAB (§4.1–§4.4) -->
+  <div id="view-generator" class="view-container" style="display: flex; flex-direction: column; flex: 1;">
+    <!-- Mode Sub-Tabs Populated from /api/modes (§4.3) -->
+    <nav id="mode-bar" class="mode-bar"></nav>
+
+    <!-- Shared Clip Metadata Bar (§4.4.1) -->
+    <section class="clip-bar">
+      <div class="clip-field">
+        <label for="clip-select">Clip:</label>
+        <select id="clip-select"></select>
+        <button id="btn-new-clip" class="btn" title="Add Clip">+</button>
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-name">Name:</label>
+        <input type="text" id="clip-name" placeholder="clip-01" style="width: 110px;">
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-model">Model:</label>
+        <select id="clip-model">
+          <option value="MiniMax-H3">MiniMax-H3</option>
+          <option value="MiniMax-H3-Max">MiniMax-H3-Max</option>
+        </select>
+      </div>
+
+      <div class="clip-field slider-group">
+        <label for="clip-duration">Duration:</label>
+        <input type="range" id="clip-duration" min="4" max="15" value="8" step="1">
+        <span id="clip-duration-val" class="slider-value">8s</span>
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-resolution">Resolution:</label>
+        <select id="clip-resolution">
+          <option value="768P">768P</option>
+          <option value="2K">2K</option>
+        </select>
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-ratio">Ratio:</label>
+        <select id="clip-ratio">
+          <option value="16:9">16:9</option>
+          <option value="21:9">21:9</option>
+          <option value="4:3">4:3</option>
+          <option value="1:1">1:1</option>
+          <option value="3:4">3:4</option>
+          <option value="9:16">9:16</option>
+          <option value="adaptive">adaptive</option>
+        </select>
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-style">Style:</label>
+        <select id="clip-style">
+          <option value="plain">plain</option>
+          <option value="80s-bollywood">80s Bollywood</option>
+          <option value="cinematic-modern">Cinematic modern</option>
+          <option value="modern-series">Modern series</option>
+          <option value="noir-thriller">Noir thriller</option>
+        </select>
+      </div>
+
+      <div id="plain-style-group" class="clip-field">
+        <label for="clip-plain-style">Pair:</label>
+        <select id="clip-plain-style">
+          <option value="Live-action, cinematic">Live-action, cinematic</option>
+          <option value="2D-animated, cinematic">2D-animated, cinematic</option>
+          <option value="3D CG, cinematic">3D CG, cinematic</option>
+          <option value="claymation, cinematic">claymation, cinematic</option>
+          <option value="watercolor, cinematic">watercolor, cinematic</option>
+          <option value="vintage film, cinematic">vintage film, cinematic</option>
+        </select>
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-language">Language:</label>
+        <select id="clip-language">
+          <option value="English">English</option>
+          <option value="Kannada">Kannada</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Marathi">Marathi</option>
+          <option value="Tamil">Tamil</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Malayalam">Malayalam</option>
+          <option value="Bengali">Bengali</option>
+        </select>
+      </div>
+
+      <div class="clip-field">
+        <label for="clip-audio-policy">Audio:</label>
+        <select id="clip-audio-policy">
+          <option value="dialogue_only">Dialogue only (house default)</option>
+          <option value="custom">Custom soundscape & music</option>
+          <option value="silence">Silence (both N/A)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- 3-Column Generator Layout (§4.2) -->
+    <main class="main-content">
+      <!-- COLUMN 1: MODE INPUTS & ACTIONS -->
+      <section class="panel">
+        <div class="panel-header">
+          <span id="mode-panel-title">T2VA Inputs</span>
+          <div class="panel-actions">
+            <button id="btn-run-preflight" class="btn" title="Validate inputs and prompt">Run Preflight</button>
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <!-- Generation Progress Strip (§4.2) -->
+          <div id="progress-strip" class="progress-strip" style="display: none;">
+            <span id="stage-seed" class="stage-pill">Seed Elaboration</span>
+            <span id="stage-prose" class="stage-pill">Prose Writer</span>
+            <span id="stage-render" class="stage-pill">Assembler</span>
+            <span id="stage-preflight" class="stage-pill">Preflight</span>
+            <span id="stage-fix" class="stage-pill" style="display: none;">Fixer</span>
+            <span id="generation-elapsed" style="margin-left: auto; color: var(--text-muted); font-family: monospace;">0ms</span>
+          </div>
+
+          <!-- Dynamic Mode Form Container -->
+          <div id="mode-form-container"></div>
+
+          <!-- Primary Actions -->
+          <div class="action-buttons-group" style="display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1rem;">
+            <button id="btn-generate" class="btn btn-primary" style="flex: 2;">Generate Prompt ▸</button>
+            <button id="btn-cancel" class="btn btn-danger" style="display: none; flex: 1;">Cancel</button>
+            <button id="btn-export" class="btn btn-success" style="flex: 1;">Export Clip</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMN 2: PROMPT PREVIEW & SYNTAX HIGHLIGHTING (§4.1) -->
+      <section class="panel">
+        <div class="panel-header">
+          <span>Prompt Output</span>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span id="prompt-status-badge" class="badge">DRAFT</span>
+            <button id="btn-copy-prompt" class="btn btn-sm" title="Copy rendered prompt to clipboard">Copy</button>
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <!-- Stale & Fallback Banners (§4.2, §8.1b) -->
+          <div id="stale-banner" class="banner banner-stale" style="display: none;">
+            ⚠️ <strong>Stale Prompt:</strong> Inputs changed since this draft was generated. Regenerate or re-validate before export.
+          </div>
+          <div id="fallback-banner" class="banner banner-fallback" style="display: none;">
+            ℹ️ <strong>Prose Fallback:</strong> Drafted without the prose model (prose_fallback = 1). All dialogue placeholders preserved.
+          </div>
+
+          <!-- Prompt Preview Container -->
+          <div class="prompt-preview-container">
+            <div id="prompt-preview" class="prompt-preview" contenteditable="false" placeholder="No prompt generated yet. Press 'Generate Prompt ▸' or run in manual draft mode."></div>
+          </div>
+
+          <!-- Prompt Footer with Unicode Code Point Counter (§4.2, §10.1) -->
+          <div class="prompt-footer">
+            <div class="counter-group">
+              <span>Chars: <strong id="char-counter" class="char-count valid">0 / 7000</strong></span>
+              <span>Words: <strong id="word-counter">0</strong></span>
+            </div>
+            <div style="display: flex; gap: 0.4rem;">
+              <button id="btn-variation" class="btn" title="Create Safer Framing Variation">+ Safer Framing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMN 3: PREFLIGHT CHECKLIST RESULTS (§4.2, §5.4, §9) -->
+      <section class="panel">
+        <div class="panel-header">
+          <span>Preflight Checklist</span>
+          <span id="checklist-summary" style="font-size: 0.8rem; color: var(--text-secondary);">0 Rules</span>
+        </div>
+
+        <div class="panel-body">
+          <div id="checklist-results" class="checklist-group">
+            <div style="color: var(--text-muted); font-size: 0.85rem; text-align: center; margin-top: 2rem;">
+              Run preflight or generate a prompt to view live validation checks.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- VIEW 2: SETTINGS TAB (§4.4.7, §7.5) -->
+  <div id="view-settings" class="view-container" style="display: none; flex: 1; overflow-y: auto;">
+    <div class="settings-container">
+      <!-- Card 1: Ollama Drafter Configuration -->
+      <div class="settings-card">
+        <h3>Ollama Drafter Configuration</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary);">
+          Local LLM used for multi-stage planning, prose generation, and preflight repairs.
+        </p>
+        <div class="settings-grid">
+          <div class="form-group">
+            <label for="setting-endpoint">Endpoint:</label>
+            <input type="text" id="setting-endpoint" value="http://127.0.0.1:11434">
+          </div>
+          <div class="form-group">
+            <label for="setting-drafter-model">Drafter Model:</label>
+            <select id="setting-drafter-model"></select>
+          </div>
+          <div class="form-group">
+            <label for="setting-temperature">Temperature:</label>
+            <input type="number" id="setting-temperature" min="0.0" max="1.0" step="0.05" value="0.2">
+          </div>
+          <div class="form-group">
+            <label for="setting-num-ctx">Context Length (num_ctx):</label>
+            <input type="number" id="setting-num-ctx" min="2048" max="65536" step="1024" value="8192">
+          </div>
+          <div class="form-group">
+            <label for="setting-timeout">Timeout (seconds):</label>
+            <input type="number" id="setting-timeout" min="15" max="600" value="120">
+          </div>
+          <div class="form-group">
+            <label for="setting-max-retries">Max Fixer Retries:</label>
+            <input type="number" id="setting-max-retries" min="1" max="5" value="2">
+          </div>
+        </div>
+        <div id="model-info-box" style="background-color: var(--bg-elevated); padding: 0.75rem; border-radius: 6px; font-size: 0.8rem; display: none;">
+          <strong>Model Details:</strong> <span id="model-info-text">-</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Export Directory & System Settings -->
+      <div class="settings-card">
+        <h3>Export & Storage Settings</h3>
+        <div class="settings-grid">
+          <div class="form-group" style="grid-column: span 2;">
+            <label for="setting-export-dir">Export Directory (Server Path):</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="text" id="setting-export-dir" value="/home/wizdroid/Applications/h3-mechanic/data/exports" style="flex: 1;">
+              <button id="btn-validate-export-dir" class="btn">Validate Path</button>
+            </div>
+            <span id="export-dir-feedback" style="font-size: 0.78rem;"></span>
+          </div>
+          <div class="form-group">
+            <label for="setting-collision">Collision Policy:</label>
+            <select id="setting-collision">
+              <option value="auto_increment">Auto-increment NN</option>
+              <option value="error">Return Error (409)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="setting-listen-port">Listen Port (applies on restart):</label>
+            <input type="number" id="setting-listen-port" min="1024" max="65535" value="9013">
+          </div>
+        </div>
+        <div style="margin-top: 0.5rem;">
+          <button id="btn-save-settings" class="btn btn-primary">Save Settings</button>
+        </div>
+      </div>
+
+      <!-- Card 3: Voice Library Reference (§4.4.7) -->
+      <div class="settings-card">
+        <h3>Voice Library Reference (Read-Only)</h3>
+        <p style="font-size: 0.82rem; color: var(--text-secondary);">
+          Closed vocabulary of 23 library voice timbres (Appendix A.7: F1–F10, M1–M11, K1–K2).
+        </p>
+        <div style="max-height: 250px; overflow-y: auto;">
+          <table class="dialogue-table">
+            <thead>
+              <tr>
+                <th style="width: 50px;">ID</th>
+                <th>Name / Age / Pitch</th>
+                <th>Roles</th>
+                <th>Paste Phrase</th>
+              </tr>
+            </thead>
+            <tbody id="voice-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ES Module Application Controller (§4.1, §4.3) -->
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+# ==============================================================================
+# H3 Prompt Studio — Git Ignore Configuration
+# ==============================================================================
+
+# Python Bytecode and Compilation Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Testing, Coverage and Cache
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# Local Runtime Databases & Generated Data
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db-journal
+data/h3studio-pre-migration-*.db
+
+# Backups, Exports & Logs (Keep directory structure via .gitkeep)
+data/backups/*
+!data/backups/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+*.log
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+*.bak
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment and Secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Temporary Files
+tmp/
+temp/
+*.tmp

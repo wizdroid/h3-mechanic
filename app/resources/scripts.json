@@ -1,0 +1,50 @@
+{
+  "Kannada": {
+    "script": "Kannada",
+    "range_start": 3200,
+    "range_end": 3327,
+    "virama": 3277
+  },
+  "Hindi": {
+    "script": "Devanagari",
+    "range_start": 2304,
+    "range_end": 2431,
+    "virama": 2381
+  },
+  "Marathi": {
+    "script": "Devanagari",
+    "range_start": 2304,
+    "range_end": 2431,
+    "virama": 2381
+  },
+  "Tamil": {
+    "script": "Tamil",
+    "range_start": 2944,
+    "range_end": 3071,
+    "virama": 3021
+  },
+  "Telugu": {
+    "script": "Telugu",
+    "range_start": 3072,
+    "range_end": 3199,
+    "virama": 3149
+  },
+  "Malayalam": {
+    "script": "Malayalam",
+    "range_start": 3328,
+    "range_end": 3455,
+    "virama": 3405
+  },
+  "Bengali": {
+    "script": "Bengali",
+    "range_start": 2432,
+    "range_end": 2559,
+    "virama": 2509
+  },
+  "English": {
+    "script": "Latin",
+    "range_start": 0,
+    "range_end": 127,
+    "virama": null
+  }
+}

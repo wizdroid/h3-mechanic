@@ -1,0 +1,29 @@
+{
+  "errors": [
+    "tense",
+    "sad"
+  ],
+  "warnings": [
+    "angry",
+    "anxious",
+    "calm",
+    "dark",
+    "dreamy",
+    "emotional",
+    "epic",
+    "fearful",
+    "happy",
+    "hopeful",
+    "joyful",
+    "melancholic",
+    "menacing",
+    "mysterious",
+    "ominous",
+    "peaceful",
+    "romantic",
+    "scary",
+    "suspenseful",
+    "tragic",
+    "uplifting"
+  ]
+}

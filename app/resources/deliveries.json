@@ -1,0 +1,86 @@
+{
+  "none": {
+    "verb": "says",
+    "manner": null
+  },
+  "whisper": {
+    "verb": "whispers",
+    "manner": "barely audible"
+  },
+  "shout": {
+    "verb": "shouts",
+    "manner": "at full volume"
+  },
+  "command": {
+    "verb": "orders firmly",
+    "manner": null
+  },
+  "mumble": {
+    "verb": "mumbles",
+    "manner": "quietly, the words trailing off"
+  },
+  "sob": {
+    "verb": "says through sobs",
+    "manner": "breath hitching between words"
+  },
+  "choked": {
+    "verb": "says",
+    "manner": "voice catching"
+  },
+  "plead": {
+    "verb": "pleads",
+    "manner": "with a rising, desperate tone"
+  },
+  "sarcastic": {
+    "verb": "says",
+    "manner": "with dry sarcasm"
+  },
+  "tender": {
+    "verb": "says softly",
+    "manner": "with a tender tone"
+  },
+  "menacing": {
+    "verb": "says slowly",
+    "manner": "each word deliberate"
+  },
+  "cold": {
+    "verb": "says",
+    "manner": "in a cold, flat tone"
+  },
+  "deadpan": {
+    "verb": "says",
+    "manner": "completely deadpan"
+  },
+  "excited": {
+    "verb": "exclaims",
+    "manner": "quickly and breathlessly"
+  },
+  "breathless": {
+    "verb": "pants out the words",
+    "manner": "between heavy breaths"
+  },
+  "nervous": {
+    "verb": "stammers",
+    "manner": "repeating the first word"
+  },
+  "laughing": {
+    "verb": "says",
+    "manner": "while laughing"
+  },
+  "furious": {
+    "verb": "says through clenched teeth",
+    "manner": "in a low, shaking voice"
+  },
+  "interrogation": {
+    "verb": "asks sharply",
+    "manner": "each question clipped"
+  },
+  "murmur": {
+    "verb": "murmurs",
+    "manner": "in a hushed undertone"
+  },
+  "singing": {
+    "verb": "sings",
+    "manner": "softly, holding the last note"
+  }
+}

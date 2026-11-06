@@ -1,0 +1,28 @@
+{
+  "plain_allowed_pairs": [
+    "Live-action, cinematic",
+    "2D-animated, cinematic",
+    "3D CG, cinematic",
+    "claymation, cinematic",
+    "watercolor, cinematic",
+    "vintage film, cinematic"
+  ],
+  "named_styles": {
+    "80s Bollywood": {
+      "ref2va_opening": "The target video is in the style of a 1980s Hindi masala film shot on 35mm, with visible film grain, a saturated warm Eastmancolor palette, soft diffusion glow on highlights, hard studio key lighting, slightly faded blacks, and natural proportions.",
+      "t2va_prefix": "[Shot 1] Vintage film, 1980s Hindi masala-film look on grainy 35mm with saturated warm colors and soft diffusion glow,"
+    },
+    "Cinematic modern": {
+      "ref2va_opening": "The target video is in a modern cinematic feature-film style with motivated low-key lighting, a teal-and-amber color grade, rich contrast, fine film grain, shallow depth of field, and natural proportions.",
+      "t2va_prefix": "[Shot 1] Live-action, cinematic, modern feature-film look with motivated low-key lighting and shallow depth of field,"
+    },
+    "Modern series": {
+      "ref2va_opening": "The target video is in a modern streaming-drama style with naturalistic soft lighting, a muted, slightly desaturated color grade, realistic skin texture, gentle contrast, and natural proportions.",
+      "t2va_prefix": "[Shot 1] Live-action, streaming-drama look with naturalistic soft lighting and a muted grade,"
+    },
+    "Noir thriller": {
+      "ref2va_opening": "The target video is in a neo-noir crime-thriller style with hard low-key lighting, deep black shadows, sodium-orange and cold cyan accents, wet reflective surfaces, light film grain, and natural proportions.",
+      "t2va_prefix": "[Shot 1] Live-action, cinematic neo-noir look with hard low-key lighting and deep shadows,"
+    }
+  }
+}

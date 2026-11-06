@@ -1,0 +1,23 @@
+[
+  {
+    "min_duration": 4,
+    "max_duration": 6,
+    "min_shots": 1,
+    "max_shots": 2,
+    "planner_target": [1]
+  },
+  {
+    "min_duration": 7,
+    "max_duration": 10,
+    "min_shots": 2,
+    "max_shots": 3,
+    "planner_target": [2]
+  },
+  {
+    "min_duration": 11,
+    "max_duration": 15,
+    "min_shots": 2,
+    "max_shots": 4,
+    "planner_target": [2, 3]
+  }
+]

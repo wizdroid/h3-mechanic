@@ -1,0 +1,140 @@
+{
+  "F1": {
+    "name": "Soft breathy, 18–25, mid-high",
+    "texture_pace": "Airy, breathy, gentle; slow",
+    "roles": "Shy lead, young bride, romantic heroine",
+    "paste_phrase": "in a soft, breathy young female voice with a slow, gentle pace"
+  },
+  "F2": {
+    "name": "Bright clear, 20–30, mid-high",
+    "texture_pace": "Clear, bright, crisp; brisk",
+    "roles": "Confident heroine, student, reporter",
+    "paste_phrase": "in a bright, clear young female voice with a lively, brisk pace"
+  },
+  "F3": {
+    "name": "Warm velvet, 28–40, mid",
+    "texture_pace": "Warm, rounded, smooth; moderate",
+    "roles": "Mother, doctor, narrator, kind sister",
+    "paste_phrase": "in a warm, velvety female voice in her thirties with a calm, even pace"
+  },
+  "F4": {
+    "name": "Low husky, 25–40, low",
+    "texture_pace": "Husky, slightly smoky; unhurried",
+    "roles": "Rebel, femme fatale, hardened convict",
+    "paste_phrase": "in a low, husky female voice with a slightly smoky texture and an unhurried pace"
+  },
+  "F5": {
+    "name": "Crisp authoritative, 35–50, mid-low",
+    "texture_pace": "Firm, articulate, precise; measured",
+    "roles": "Woman officer, lawyer, judge, boss",
+    "paste_phrase": "in a crisp, authoritative mid-low female voice with precise diction and a measured pace"
+  },
+  "F6": {
+    "name": "Fragile trembling, 20–35, mid-high",
+    "texture_pace": "Thin, slightly trembling, hushed; hesitant",
+    "roles": "Guilty convict, victim, frightened witness",
+    "paste_phrase": "in a thin, fragile young female voice with a slight tremble and a hesitant pace"
+  },
+  "F7": {
+    "name": "Rich matriarch, 50–65, low-mid",
+    "texture_pace": "Rich, resonant, slightly gravelly; deliberate",
+    "roles": "Mother-in-law, matriarch, female don",
+    "paste_phrase": "in a rich, resonant older female voice with a slight gravel and a deliberate pace"
+  },
+  "F8": {
+    "name": "Elderly frail, 65–80, mid",
+    "texture_pace": "Papery, cracked, soft; slow with pauses",
+    "roles": "Grandmother, old villager",
+    "paste_phrase": "in a frail, cracked elderly female voice with a slow pace and small pauses"
+  },
+  "F9": {
+    "name": "Playful sassy, 16–24, high",
+    "texture_pace": "Bright, teasing, sing-song; quick",
+    "roles": "Comic friend, younger sister, college girl",
+    "paste_phrase": "in a playful, high, teasing young female voice with a quick, sing-song rhythm"
+  },
+  "F10": {
+    "name": "Sweet melodic, 20–28, mid-high",
+    "texture_pace": "Sweet, smooth, honeyed, softly musical; gentle/flowing",
+    "roles": "Female protagonist, heroine, innocent lead",
+    "paste_phrase": "in a sweet, melodic young female voice, smooth and honeyed, with a gentle, flowing pace"
+  },
+  "M1": {
+    "name": "Deep gravelly, 45–60, low",
+    "texture_pace": "Gravelly, weathered; slow/measured",
+    "roles": "Senior officer, don, father",
+    "paste_phrase": "in a deep, gravelly middle-aged male voice with a slow, measured pace"
+  },
+  "M2": {
+    "name": "Resonant baritone, 30–45, low-mid",
+    "texture_pace": "Smooth, resonant, full; steady",
+    "roles": "Hero, lead officer, lawyer",
+    "paste_phrase": "in a smooth, resonant baritone male voice with a steady, confident pace"
+  },
+  "M3": {
+    "name": "Warm gentle, 25–35, mid",
+    "texture_pace": "Soft, warm, slightly husky; relaxed",
+    "roles": "Romantic lead, kind brother, doctor",
+    "paste_phrase": "in a warm, gentle young male voice with a soft husk and a relaxed pace"
+  },
+  "M4": {
+    "name": "Young energetic, 18–25, mid-high",
+    "texture_pace": "Bright, light; fast",
+    "roles": "College boy, sidekick, younger brother",
+    "paste_phrase": "in a bright, energetic young male voice with a fast, eager pace"
+  },
+  "M5": {
+    "name": "Stern commanding, 35–50, mid-low",
+    "texture_pace": "Hard, clipped, projected; brisk staccato",
+    "roles": "Jail warden, inspector, army officer",
+    "paste_phrase": "in a hard, clipped mid-low male voice with a brisk staccato pace"
+  },
+  "M6": {
+    "name": "Raspy menacing, 30–50, low",
+    "texture_pace": "Raspy, half-whispered, dry; slow drawl",
+    "roles": "Villain, henchman, blackmailer",
+    "paste_phrase": "in a low, raspy male voice, half-whispered, with a slow, menacing drawl"
+  },
+  "M7": {
+    "name": "Nasal comic, 25–45, mid-high",
+    "texture_pace": "Nasal, reedy; quick/uneven",
+    "roles": "Comic constable, shopkeeper, side character",
+    "paste_phrase": "in a reedy, slightly nasal male voice with a quick, uneven rhythm"
+  },
+  "M8": {
+    "name": "Elderly wise, 65–80, low-mid",
+    "texture_pace": "Thin, cracked, warm; slow",
+    "roles": "Grandfather, priest, retired judge",
+    "paste_phrase": "in a thin, cracked elderly male voice, warm but tired, with a slow pace"
+  },
+  "M9": {
+    "name": "Nervous thin, 20–35, mid",
+    "texture_pace": "Thin, tight, breathy; rushed/stumbling",
+    "roles": "Accused man, clerk, informer",
+    "paste_phrase": "in a thin, tight young male voice that rushes and stumbles over the words"
+  },
+  "M10": {
+    "name": "Soft-spoken calm, 25–40, mid-low",
+    "texture_pace": "Soft, quiet, velvety, close-mic; slow/unhurried",
+    "roles": "Quiet hero, poet, gentle father, shy lover",
+    "paste_phrase": "in a soft-spoken, quiet male voice, velvety and calm, with a slow, unhurried pace"
+  },
+  "M11": {
+    "name": "Deep villain bass, 35–55, very low",
+    "texture_pace": "Deep bass, smooth, cold, resonant; slow/deliberate/controlled",
+    "roles": "Main villain, crime boss, corrupt politician",
+    "paste_phrase": "in a very deep, cold bass male voice, smooth and resonant, with a slow, deliberate, menacing calm"
+  },
+  "K1": {
+    "name": "Girl, 6–10",
+    "texture_pace": "Small, high, clear",
+    "roles": "Child",
+    "paste_phrase": "in a small, high, clear little girl's voice"
+  },
+  "K2": {
+    "name": "Boy, 6–10",
+    "texture_pace": "Small, bright, excited pace",
+    "roles": "Child",
+    "paste_phrase": "in a small, bright little boy's voice with an excited pace"
+  }
+}

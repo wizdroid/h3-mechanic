@@ -1,0 +1,53 @@
+{
+  "camera_patterns": [
+    "The camera holds a static shot",
+    "The camera pushes in",
+    "The camera pulls out",
+    "The camera zooms in",
+    "The camera zooms out",
+    "The camera pans left",
+    "The camera pans right",
+    "The camera tilts up",
+    "The camera tilts down",
+    "The camera trucks left",
+    "The camera trucks right",
+    "The camera pedestals up",
+    "The camera pedestals down",
+    "The camera arcs around <Subject \\d+>",
+    "The camera tracks <Subject \\d+>",
+    "The camera holds <Subject \\d+>'s point of view",
+    "The camera shakes slightly",
+    "The camera shakes strongly",
+    "The camera rolls clockwise",
+    "The camera rolls counterclockwise"
+  ],
+  "camera_patterns_non_ref": [
+    "The camera arcs around ",
+    "The camera tracks ",
+    "The camera holds [^.]{1,60}?'s point of view"
+  ],
+  "landing_substrings": [
+    " toward ",
+    " revealing ",
+    " onto ",
+    " as "
+  ],
+  "allowed_amplitude_modifiers": [
+    "with small amplitude",
+    "with large amplitude"
+  ],
+  "allowed_speed_modifiers": [
+    "at slow speed",
+    "at fast speed"
+  ],
+  "no_modifier_moves": [
+    "static",
+    "pov",
+    "shake"
+  ],
+  "no_landing_required_moves": [
+    "static",
+    "pov",
+    "shake"
+  ]
+}
