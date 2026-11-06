@@ -198,7 +198,31 @@ weather · lighting · color palette · visual effect · particles · texture ·
 - **Composition Anchor:** `<Picture 3> is the composition anchor for [Shot 1], defining the layout.`
 - **Voice Timbre Reference:** `<Audio 1> is the voice-timbre reference for <Subject 1> (S1).`
 
-### 6.3 Card 3: Directing Scene Action & Multi-Subject Choreography (`events`)
+### 6.3 Creating and Editing Subjects (✏️ Edit Drawer)
+
+Each subject defined in Card 2 can be modified at any time without having to delete and re-create it:
+
+```text
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ <Subject 1>  [person]  the officer (a prison guard)  [outfit: tactical vest] [✏️ Edit] [✕] │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ ✏️ Edit <Subject 1>                                              [Cancel] [Save Changes] │
+│ Role Type: [dinosaur          ▼]  Role Phrase: [velociraptor                         ] │
+│ Pronoun:   [its               ▼]  Outfit Noun: [scales                               ] │
+│ Appositive: [an apex pack hunter                                                     ] │
+│ Features:   [sharp claws, sickle-shaped foot claws, and amber eyes                   ] │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+1. **Inline Edit Drawer:**
+   - Click the **✏️ Edit** button on any subject card to expand its inline drawer.
+   - All properties are editable: **Role Type** (from 45+ categorized taxonomy options), **Role Phrase**, **Pronoun** (`his`, `her`, `its`), **Outfit / Covering Noun** (e.g. `uniform`, `scales`, `feathers`), **Appositive** (e.g. `an apex hunter`), and **Features List** (e.g. `sharp horns, leathery wings`).
+2. **Instant Live Preview Update:**
+   - Clicking **Save Changes** immediately calls `PUT /api/subjects/{id}`, refreshes the subject card, updates the live deterministic compiled definitions box at the top of Card 2 (zero LLM calls), and keeps Card 4 retention synchronization in sync.
+3. **Cancel Edits:**
+   - Clicking **Cancel** or **✕ Close** collapses the drawer and restores original values without persisting changes.
+
+### 6.4 Card 3: Directing Scene Action & Multi-Subject Choreography (`events`)
 Card 3 allows authors to direct the exact physical action and staging that happens in each shot using the **🎬 Action / What happens** input:
 
 ```text

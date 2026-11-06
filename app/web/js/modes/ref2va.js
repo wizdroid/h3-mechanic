@@ -264,6 +264,103 @@ async function renderCard1ReferenceTokens(cardElem, clipId, onRefsChanged) {
 // CARD 2: SUBJECTS & PICTURE MAPPING CARD (§4.4.6, S-03, §8.3, Appendix A.9)
 // ==============================================================================
 
+const SUBJECT_ROLES_TAXONOMY = [
+  {
+    group: "Characters & Beings",
+    roles: [
+      { val: "person", label: "person" },
+      { val: "character", label: "character" },
+      { val: "animal", label: "animal" },
+      { val: "creature", label: "creature" },
+      { val: "dinosaur", label: "dinosaur" },
+      { val: "monster", label: "monster" },
+      { val: "beast", label: "beast" },
+      { val: "robot", label: "robot / android" },
+      { val: "crowd", label: "crowd / group" },
+      { val: "body_part", label: "body part" },
+      { val: "face", label: "face" },
+      { val: "hair", label: "hair" },
+    ],
+  },
+  {
+    group: "Objects & Items",
+    roles: [
+      { val: "object", label: "object" },
+      { val: "prop", label: "prop" },
+      { val: "weapon", label: "weapon" },
+      { val: "vehicle", label: "vehicle" },
+      { val: "tool", label: "tool" },
+      { val: "device", label: "device / tech" },
+      { val: "instrument", label: "instrument" },
+      { val: "furniture", label: "furniture" },
+      { val: "food", label: "food" },
+      { val: "drink", label: "drink" },
+    ],
+  },
+  {
+    group: "Apparel & Adornment",
+    roles: [
+      { val: "outfit", label: "outfit" },
+      { val: "accessory", label: "accessory" },
+      { val: "jewelry", label: "jewelry" },
+      { val: "footwear", label: "footwear" },
+      { val: "headwear", label: "headwear" },
+      { val: "makeup", label: "makeup" },
+      { val: "tattoo", label: "tattoo" },
+    ],
+  },
+  {
+    group: "Environment & Setting",
+    roles: [
+      { val: "location", label: "location" },
+      { val: "architecture", label: "architecture" },
+      { val: "interior", label: "interior" },
+      { val: "landscape", label: "landscape" },
+      { val: "background", label: "background" },
+      { val: "plant", label: "plant / flora" },
+    ],
+  },
+  {
+    group: "Atmosphere & Visual Elements",
+    roles: [
+      { val: "weather", label: "weather" },
+      { val: "lighting", label: "lighting" },
+      { val: "color_palette", label: "color palette" },
+      { val: "effect", label: "visual effect" },
+      { val: "particle", label: "particles" },
+      { val: "texture", label: "texture" },
+      { val: "material", label: "material" },
+      { val: "pattern", label: "pattern" },
+      { val: "symbol", label: "symbol / insignia" },
+      { val: "logo", label: "logo" },
+      { val: "text", label: "text / inscription" },
+      { val: "other", label: "other" },
+    ],
+  },
+];
+
+function escapeAttr(str) {
+  if (str === null || str === undefined) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function renderRoleOptionsHtml(selectedRole = "person") {
+  return SUBJECT_ROLES_TAXONOMY.map((group) => {
+    const opts = group.roles
+      .map(
+        (r) =>
+          `<option value="${r.val}" ${r.val === selectedRole ? "selected" : ""}>${r.label}</option>`
+      )
+      .join("");
+    return `<optgroup label="${group.group}">${opts}</optgroup>`;
+  }).join("");
+}
+
 async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
   let subjects = [];
   let subjectPictures = [];
@@ -320,63 +417,7 @@ async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
       <div style="font-size: 0.8rem; font-weight: bold; margin-bottom: 0.4rem; color: var(--text-primary);">+ Add Subject</div>
       <div style="display: grid; grid-template-columns: 140px 1fr 70px 100px auto; gap: 0.4rem; align-items: center;">
         <select id="new-sub-role" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
-          <optgroup label="Characters & Beings">
-            <option value="person" selected>person</option>
-            <option value="character">character</option>
-            <option value="animal">animal</option>
-            <option value="creature">creature</option>
-            <option value="dinosaur">dinosaur</option>
-            <option value="monster">monster</option>
-            <option value="beast">beast</option>
-            <option value="robot">robot / android</option>
-            <option value="crowd">crowd / group</option>
-            <option value="body_part">body part</option>
-            <option value="face">face</option>
-            <option value="hair">hair</option>
-          </optgroup>
-          <optgroup label="Objects & Items">
-            <option value="object">object</option>
-            <option value="prop">prop</option>
-            <option value="weapon">weapon</option>
-            <option value="vehicle">vehicle</option>
-            <option value="tool">tool</option>
-            <option value="device">device / tech</option>
-            <option value="instrument">instrument</option>
-            <option value="furniture">furniture</option>
-            <option value="food">food</option>
-            <option value="drink">drink</option>
-          </optgroup>
-          <optgroup label="Apparel & Adornment">
-            <option value="outfit">outfit</option>
-            <option value="accessory">accessory</option>
-            <option value="jewelry">jewelry</option>
-            <option value="footwear">footwear</option>
-            <option value="headwear">headwear</option>
-            <option value="makeup">makeup</option>
-            <option value="tattoo">tattoo</option>
-          </optgroup>
-          <optgroup label="Environment & Setting">
-            <option value="location">location</option>
-            <option value="architecture">architecture</option>
-            <option value="interior">interior</option>
-            <option value="landscape">landscape</option>
-            <option value="background">background</option>
-            <option value="plant">plant / flora</option>
-          </optgroup>
-          <optgroup label="Atmosphere & Visual Elements">
-            <option value="weather">weather</option>
-            <option value="lighting">lighting</option>
-            <option value="color_palette">color palette</option>
-            <option value="effect">visual effect</option>
-            <option value="particle">particles</option>
-            <option value="texture">texture</option>
-            <option value="material">material</option>
-            <option value="pattern">pattern</option>
-            <option value="symbol">symbol / insignia</option>
-            <option value="logo">logo</option>
-            <option value="text">text / inscription</option>
-            <option value="other">other</option>
-          </optgroup>
+          ${renderRoleOptionsHtml("person")}
         </select>
         <input type="text" id="new-sub-role-phrase" placeholder="e.g. officer, velociraptor, sword" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
         <select id="new-sub-pronoun" style="padding: 0.3rem; font-size: 0.8rem; border-radius: 4px; background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color);">
@@ -411,13 +452,63 @@ async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
 
     sBox.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
           <strong style="color: var(--accent); font-family: monospace;">${labelStr}</strong>
           <span class="badge">${subj.role}</span>
-          <span style="font-size: 0.82rem; color: var(--text-primary); font-weight: 500;">the ${subj.role_phrase || "character"}</span>
-          ${subj.appositive ? `<span style="font-size: 0.76rem; color: var(--text-muted);">(${subj.appositive})</span>` : ""}
+          <span style="font-size: 0.82rem; color: var(--text-primary); font-weight: 500;">the ${escapeAttr(subj.role_phrase || "character")}</span>
+          ${subj.appositive ? `<span style="font-size: 0.76rem; color: var(--text-muted);">(${escapeAttr(subj.appositive)})</span>` : ""}
+          ${subj.outfit_noun && subj.outfit_noun !== "outfit" ? `<span style="font-size: 0.72rem; color: var(--nord14); background: var(--bg-surface); padding: 0.1rem 0.35rem; border-radius: 3px; border: 1px solid var(--border-color);">outfit: ${escapeAttr(subj.outfit_noun)}</span>` : ""}
         </div>
-        <button class="btn btn-sm btn-danger btn-del-subj" title="Delete Subject">✕</button>
+        <div style="display: flex; align-items: center; gap: 0.35rem;">
+          <button class="btn btn-sm btn-edit-subj" title="Edit Subject" style="font-size: 0.74rem; padding: 0.2rem 0.5rem;">✏️ Edit</button>
+          <button class="btn btn-sm btn-danger btn-del-subj" title="Delete Subject" style="font-size: 0.74rem; padding: 0.2rem 0.5rem;">✕</button>
+        </div>
+      </div>
+      ${subj.feature_list ? `<div style="font-size: 0.74rem; color: var(--text-muted); font-style: italic; margin-top: -0.2rem;">Features: ${escapeAttr(subj.feature_list)}</div>` : ""}
+
+      <!-- Edit Subject Drawer (collapsed by default) -->
+      <div class="sub-edit-drawer" style="display: none; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 5px; padding: 0.55rem; margin-top: 0.3rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; border-bottom: 1px dashed var(--border-color); padding-bottom: 0.3rem;">
+          <strong style="font-size: 0.76rem; color: var(--accent);">Edit ${labelStr}</strong>
+          <div style="display: flex; gap: 0.35rem;">
+            <button class="btn btn-sm btn-cancel-edit-subj" style="font-size: 0.72rem; padding: 0.15rem 0.45rem;">Cancel</button>
+            <button class="btn btn-sm btn-primary btn-save-edit-subj" style="font-size: 0.72rem; padding: 0.15rem 0.6rem;">Save Changes</button>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 140px 1fr 75px 110px; gap: 0.4rem; align-items: center;">
+          <div>
+            <label style="font-size: 0.68rem; color: var(--text-muted); display: block; margin-bottom: 0.15rem;">Role Type</label>
+            <select class="edit-sub-role" style="width: 100%; padding: 0.25rem; font-size: 0.76rem; border-radius: 3px; background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-color);">
+              ${renderRoleOptionsHtml(subj.role)}
+            </select>
+          </div>
+          <div>
+            <label style="font-size: 0.68rem; color: var(--text-muted); display: block; margin-bottom: 0.15rem;">Role Phrase</label>
+            <input type="text" class="edit-sub-role-phrase" value="${escapeAttr(subj.role_phrase || "")}" placeholder="e.g. officer, velociraptor" style="width: 100%; padding: 0.25rem; font-size: 0.76rem; border-radius: 3px; background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-color);">
+          </div>
+          <div>
+            <label style="font-size: 0.68rem; color: var(--text-muted); display: block; margin-bottom: 0.15rem;">Pronoun</label>
+            <select class="edit-sub-pronoun" style="width: 100%; padding: 0.25rem; font-size: 0.76rem; border-radius: 3px; background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-color);">
+              <option value="his" ${subj.pronoun === "his" ? "selected" : ""}>his</option>
+              <option value="her" ${subj.pronoun === "her" ? "selected" : ""}>her</option>
+              <option value="its" ${subj.pronoun === "its" ? "selected" : ""}>its</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size: 0.68rem; color: var(--text-muted); display: block; margin-bottom: 0.15rem;">Outfit Noun</label>
+            <input type="text" class="edit-sub-outfit-noun" value="${escapeAttr(subj.outfit_noun || "outfit")}" placeholder="outfit" style="width: 100%; padding: 0.25rem; font-size: 0.76rem; border-radius: 3px; background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-color);">
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; margin-top: 0.35rem;">
+          <div>
+            <label style="font-size: 0.68rem; color: var(--text-muted); display: block; margin-bottom: 0.15rem;">Appositive (Optional)</label>
+            <input type="text" class="edit-sub-appositive" value="${escapeAttr(subj.appositive || "")}" placeholder="e.g. a prison guard" style="width: 100%; padding: 0.25rem; font-size: 0.74rem; border-radius: 3px; background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-color);">
+          </div>
+          <div>
+            <label style="font-size: 0.68rem; color: var(--text-muted); display: block; margin-bottom: 0.15rem;">Features List (Optional)</label>
+            <input type="text" class="edit-sub-features" value="${escapeAttr(subj.feature_list || "")}" placeholder="e.g. sharp horns, leathery wings" style="width: 100%; padding: 0.25rem; font-size: 0.74rem; border-radius: 3px; background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-color);">
+          </div>
+        </div>
       </div>
 
       <!-- Linked Pictures Chips (Many-to-Many S-03) -->
@@ -445,6 +536,76 @@ async function renderCard2Subjects(cardElem, clipId, onSubjectsChanged) {
         </div>
       </div>
     `;
+
+    // Edit Drawer Elements & Handlers
+    const drawer = sBox.querySelector(".sub-edit-drawer");
+    const editBtn = sBox.querySelector(".btn-edit-subj");
+    const cancelBtn = sBox.querySelector(".btn-cancel-edit-subj");
+    const saveBtn = sBox.querySelector(".btn-save-edit-subj");
+
+    editBtn.addEventListener("click", () => {
+      const isHidden = drawer.style.display === "none";
+      drawer.style.display = isHidden ? "block" : "none";
+      editBtn.textContent = isHidden ? "✕ Close" : "✏️ Edit";
+    });
+
+    cancelBtn.addEventListener("click", () => {
+      drawer.style.display = "none";
+      editBtn.textContent = "✏️ Edit";
+      // Reset field values to original
+      sBox.querySelector(".edit-sub-role").value = subj.role;
+      sBox.querySelector(".edit-sub-role-phrase").value = subj.role_phrase || "";
+      sBox.querySelector(".edit-sub-pronoun").value = subj.pronoun || "his";
+      sBox.querySelector(".edit-sub-outfit-noun").value = subj.outfit_noun || "outfit";
+      sBox.querySelector(".edit-sub-appositive").value = subj.appositive || "";
+      sBox.querySelector(".edit-sub-features").value = subj.feature_list || "";
+    });
+
+    saveBtn.addEventListener("click", async () => {
+      const role = sBox.querySelector(".edit-sub-role").value;
+      const rolePhrase = sBox.querySelector(".edit-sub-role-phrase").value.trim();
+      const pronoun = sBox.querySelector(".edit-sub-pronoun").value;
+      const outfitNoun = sBox.querySelector(".edit-sub-outfit-noun").value.trim();
+      const appositive = sBox.querySelector(".edit-sub-appositive").value.trim();
+      const featureList = sBox.querySelector(".edit-sub-features").value.trim();
+
+      if (!rolePhrase) {
+        alert("Please enter a role phrase (e.g. officer, velociraptor, sword)");
+        return;
+      }
+
+      saveBtn.disabled = true;
+      saveBtn.textContent = "Saving...";
+
+      try {
+        const res = await fetch(`/api/subjects/${subj.id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            role,
+            role_phrase: rolePhrase,
+            pronoun,
+            outfit_noun: outfitNoun || "outfit",
+            appositive,
+            feature_list: featureList,
+          }),
+        });
+        if (res.ok) {
+          renderCard2Subjects(cardElem, clipId, onSubjectsChanged);
+          if (onSubjectsChanged) onSubjectsChanged();
+        } else {
+          const err = await res.json().catch(() => ({}));
+          alert(`Failed to save subject: ${err.detail?.error?.message || res.statusText}`);
+          saveBtn.disabled = false;
+          saveBtn.textContent = "Save Changes";
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Network error updating subject");
+        saveBtn.disabled = false;
+        saveBtn.textContent = "Save Changes";
+      }
+    });
 
     // Render linked chips
     const chipsBox = sBox.querySelector(".picture-chips-container");

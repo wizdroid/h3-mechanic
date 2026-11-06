@@ -802,10 +802,26 @@ async def test_ref2va_crud_endpoints():
         list_subs = await client.get(f"/api/clips/{cid}/subjects")
         assert len(list_subs.json()) == 2
 
-        # Update subject
-        up_sub = await client.put(f"/api/subjects/{s1_id}", json={"role_phrase": "senior guard"})
+        # Update subject with all fields (role, role_phrase, pronoun, outfit_noun, appositive, feature_list)
+        up_sub = await client.put(
+            f"/api/subjects/{s1_id}",
+            json={
+                "role": "dinosaur",
+                "role_phrase": "velociraptor",
+                "pronoun": "its",
+                "outfit_noun": "scales",
+                "appositive": "an apex hunter",
+                "feature_list": "sharp claws and sickle-shaped foot claws",
+            },
+        )
         assert up_sub.status_code == 200
-        assert up_sub.json()["role_phrase"] == "senior guard"
+        up_data = up_sub.json()
+        assert up_data["role"] == "dinosaur"
+        assert up_data["role_phrase"] == "velociraptor"
+        assert up_data["pronoun"] == "its"
+        assert up_data["outfit_noun"] == "scales"
+        assert up_data["appositive"] == "an apex hunter"
+        assert up_data["feature_list"] == "sharp claws and sickle-shaped foot claws"
 
         # 2. Shots CRUD
         shot1 = await client.post(
@@ -823,5 +839,5 @@ async def test_ref2va_crud_endpoints():
         assert prev_res.status_code == 200
         preview = prev_res.json()
         assert preview["subject_count"] == 2
-        assert "<Subject 1> is the senior guard" in preview["subject_definitions"]
+        assert "<Subject 1> is the velociraptor" in preview["subject_definitions"]
         assert "<Subject 2> is the courtyard" in preview["subject_definitions"]
