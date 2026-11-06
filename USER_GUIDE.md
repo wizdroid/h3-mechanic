@@ -156,36 +156,70 @@ Under specification rules S-02 and PF-20, reference tokens are strictly bounded:
 > [!IMPORTANT]
 > Uploading a 10th image or a 4th audio file triggers an immediate HTTP 422 `budget_exceeded` error. Image dimensions are optional metadata; dimensions outside 256–5760 px emit non-blocking yellow warnings.
 
-### 6.2 Many-to-Many Subject-to-Picture Linking (S-03 Formulas)
-Subjects are compiled using **deterministic formulas**—an LLM is never allowed to draft subject definitions:
+### 6.2 Extensive Subject Taxonomy & Deterministic Formulas (S-03)
+Subjects are categorized into 5 semantic groups with specialized deterministic formulas—an LLM is never allowed to invent subject definitions:
 
-#### Case A: Zero Pictures Linked (Text-Only)
-When a character is defined purely by written prose:
-```text
-<Subject 2> is the informant with his appearance, facial features, build, and complete outfit defined by text alone.
+```html
+<!-- 1. Characters & Beings -->
+person · character · animal · creature · dinosaur · monster · beast · robot / android · crowd / group · body part · face · hair
+
+<!-- 2. Objects & Items -->
+object · prop · weapon · vehicle · tool · device / tech · instrument · furniture · food · drink
+
+<!-- 3. Apparel & Adornment -->
+outfit · accessory · jewelry · footwear · headwear · makeup · tattoo
+
+<!-- 4. Environment & Setting -->
+location · architecture · interior · landscape · background · plant / flora
+
+<!-- 5. Atmosphere & Visual Elements -->
+weather · lighting · color palette · visual effect · particles · texture · material · pattern · symbol · logo · text · other
 ```
 
-#### Case B: One Picture Linked (Identity Anchor)
-When a single picture defines face, hair, and body:
-```text
-<Subject 1> is the detective in <Picture 1> with his face, hair, build, and complete trench coat taken exactly from the reference.
-```
+#### Living Beings & Creatures (Person, Character, Animal, Creature, Dinosaur, Monster, Robot):
+- **Case A: Zero Pictures Linked (Text-Only):**
+  `<Subject 2> is the informant with his appearance, facial features, build, and complete outfit defined by text alone.`  
+  `<Subject 3> is the raven with its appearance, facial features, build, and complete feathers defined by text alone.`
+- **Case B: One Picture Linked (Identity Anchor):**
+  `<Subject 1> is the detective in <Picture 1> with his face, hair, build, and complete trench coat taken exactly from the reference.`  
+  `<Subject 2> is the velociraptor in <Picture 2>, a pack hunter, with its face, hair, build, and complete scales taken exactly from the reference.`
+- **Case C: Multiple Pictures Linked (Face + Covering/Outfit Split):**
+  `<Subject 1> is the officer with his face, hair, and build taken from <Picture 1> and his complete tactical uniform taken from <Picture 2>.`
 
-#### Case C: Multiple Pictures Linked (Face + Outfit Split)
-When you combine a face reference with a separate costume/outfit plate:
-```text
-<Subject 1> is the officer with his face, hair, and build taken from <Picture 1> and his complete tactical uniform taken from <Picture 2>.
-```
+#### Inanimate Objects, Props & Weapons (`object`, `prop`, `weapon`, `vehicle`, etc.):
+- **With 1 Picture:** `<Subject 4> is the ancient broadsword in <Picture 3>, with its shape, material, color, and distinctive details taken exactly from the reference.`
+- **With 0 Pictures:** `<Subject 4> is the ancient broadsword, with its shape, material, color, and distinctive details defined by text alone.`
+
+#### Environments & Locations (`location`, `architecture`, `interior`, etc.):
+- **With 1 Picture:** `<Subject 5> is the prison corridor in <Picture 4>, including its walls, floor, cell doors, and layout exactly as shown.`
+- **With 0 Pictures:** `<Subject 5> is the prison corridor, including its walls, floor, cell doors, and layout defined by text alone.`
 
 #### Picture Anchors and Timbre References:
-- **Composition Anchor:**
-  ```text
-  <Picture 3> is the composition anchor for [Shot 1], defining the layout.
-  ```
-- **Voice Timbre Reference:**
-  ```text
-  <Audio 1> is the voice-timbre reference for <Subject 1> (S1).
-  ```
+- **Composition Anchor:** `<Picture 3> is the composition anchor for [Shot 1], defining the layout.`
+- **Voice Timbre Reference:** `<Audio 1> is the voice-timbre reference for <Subject 1> (S1).`
+
+### 6.3 Card 3: Directing Scene Action & Multi-Subject Choreography (`events`)
+Card 3 allows authors to direct the exact physical action and staging that happens in each shot using the **🎬 Action / What happens** input:
+
+```text
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ [Shot 1]  | Start: 00:00.000 | Size: Medium Shot | Angle: Eye Level | Camera Move...   │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ 🎬 Action / What happens:                                                              │
+│ [ <Subject 1> sits astride <Subject 2>, gripping the reins as the dinosaur gallops... ] │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Directing Multi-Subject Choreography:
+When you have multiple subjects (for example, `<Subject 1>` a warrior and `<Subject 2>` a dinosaur):
+1. In the **🎬 Action / What happens** input for `[Shot 1]`, write the exact character interactions:
+   > `<Subject 1> sits astride <Subject 2>, gripping the leather reins tightly as the dinosaur charges forward through the thick jungle ferns, kicking up clods of earth.`
+2. In `[Shot 2]`, describe the subsequent beat:
+   > `<Subject 1> leans forward close to the neck of <Subject 2>, scanning the misty canyon ahead with a determined expression.`
+
+#### How the Engine Executes Your Action:
+- **During Generation:** The `shot_writer` stage receives the planned camera move, lens size, and your explicit action beats, weaving them into rich cinematic prose that satisfies MiniMax's face-safety and action-chain rules.
+- **During Fallback:** If the LLM is unavailable or fails, `stitch_fallback_prose` automatically integrates your exact action text into the compiled prompt.
 
 ---
 

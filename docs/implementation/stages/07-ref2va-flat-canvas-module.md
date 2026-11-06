@@ -35,14 +35,14 @@ Build the flat unified canvas per §4.4.6:
   - Drag-and-drop or position up/down reordering using the positive offset shift transaction (§6.4).
   - Live budget counters: images (max 9), videos (max 3), audio (max 3), files (max 12).
 - **Card 2: Subjects & Picture Mapping:**
-  - Add/remove subjects with role dropdown (person, character, location, prop, outfit, etc.), grammatical pronoun (`his`/`her`/`its`), short role noun (`officer`), outfit noun (`uniform`), optional appositive (`a convict`), and feature list.
+  - Add/remove subjects with extensive categorized role taxonomy (Characters & Beings: person, character, animal, creature, dinosaur, monster, beast, robot, crowd; Objects & Items: object, prop, weapon, vehicle, tool, device; Apparel; Environment; Atmosphere & FX), grammatical pronoun (`his`/`her`/`its`), short role noun (`officer`, `velociraptor`), outfit/covering noun (`uniform`, `scales`), optional appositive (`a pack hunter`), and feature list.
   - Multi-select picture link chips:
     - 0 pictures linked: text-only description mode.
     - 1 picture linked: standard identity anchor.
     - Multiple pictures linked: e.g. `<Picture 1>` (identity_anchor) + `<Picture 2>` (outfit).
   - Shot anchor dropdown for composition, framing, and frame roles (`anchor_shot_id`).
 - **Card 3: Shot Editor & Dialogue:**
-  - Add/remove shots: start time `MM:SS.mmm` (Shot 1 locked to 0.00s), size, angle, official camera move with landing, pacing (`silent` or `action`).
+  - Add/remove shots: start time `MM:SS.mmm` (Shot 1 locked to 0.00s), size, angle, official camera move with landing, pacing (`silent` or `action`), and dedicated Action & Events (`events`) field to direct scene staging and multi-subject choreography (e.g. character riding a dinosaur).
   - Dialogue lines: speaker selector, audio timbre link (`audio_reference_id`), delivery, native script, cross-cut flag with destination shot selector.
 - **Card 4: Action Bar & Retention:**
   - Auto-synchronized retention table: subject entries, anchor picture entries, video entries, audio entries.

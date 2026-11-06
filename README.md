@@ -21,7 +21,7 @@ Unlike standard chatbots or generic prompt wrappers, H3 Prompt Studio employs a 
 | **I2VA** | Image-to-Video-Audio | Single image reference. Starts with code-generated instruction line: `For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.` Aspect ratio strictly locked to `adaptive`. |
 | **FL2VA** | First-Last-Frame-to-Video-Audio | Two-image interpolation. Starts with instruction line aligning Picture 1 at `0.00`s and Picture 2 at final duration `S.SS`s. Supports 1-shot camera journeys (Criterion A-12). Aspect ratio locked to `adaptive`. |
 | **L2VA** | Last-Frame-to-Video-Audio | Single image continuation. Starts with instruction line landing on `<Picture 1>` at final duration `S.SS`s. Aspect ratio locked to `adaptive`. |
-| **REF2VA** | Multi-Reference-to-Video-Audio | Flat single-canvas interface supporting up to 9 images, 3 videos, 3 audio files, and many-to-many character linking (0, 1, or multiple pictures per subject). Assembles 6 canonical prompt sections and generates companion ComfyUI `PLATES.txt` files. |
+| **REF2VA** | Multi-Reference-to-Video-Audio | Flat single-canvas interface supporting up to 9 images, 3 videos, 3 audio files, and many-to-many subject linking (0, 1, or multiple pictures per subject across extensive categories: characters, animals, dinosaurs, creatures, robots, objects, props, locations). Features per-shot **Action & Events** choreography to direct multi-subject staging, assembles 6 canonical prompt sections, and generates companion ComfyUI `PLATES.txt` files. |
 
 ---
 
